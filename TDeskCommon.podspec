@@ -1,0 +1,36 @@
+Pod::Spec.new do |spec|
+  spec.name         = 'TDeskCommon'
+  spec.version      = '1.1.0'
+  spec.platform     = :ios 
+  spec.ios.deployment_target = '9.0'
+  spec.license      = { :type => 'Proprietary',
+      :text => <<-LICENSE
+        copyright 2017 tencent Ltd. All rights reserved.
+        LICENSE
+       }
+  spec.homepage     = 'https://cloud.tencent.com/document/product/269/3794'
+  spec.documentation_url = 'https://cloud.tencent.com/document/product/269/9147'
+  spec.authors      = 'tencent video cloud'
+  spec.summary      = 'TIMCommon'
+  
+#  spec.vendored_frameworks = 'ReactiveObjCForTDesk.framework'
+  
+  spec.dependency 'TDeskCore'
+  spec.dependency 'SDWebImage'
+  spec.dependency 'ReactiveObjCForTDesk'
+  spec.dependency 'MasonryForTDesk'
+  spec.requires_arc = true
+
+  spec.source = { :git => 'https://github.com/RoleWong/TDeskCommon.git', :tag => spec.version}
+  spec.source_files = '**/*.{h,m,mm,c}'
+
+  spec.resource = ['Resources/*.bundle']
+  spec.resource_bundle = {
+    "#{spec.module_name}_Privacy" => 'Resources/PrivacyInfo.xcprivacy'
+  }
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.pod_target_xcconfig = { 'IPHONEOS_DEPLOYMENT_TARGET' => '12.0' }
+
+end
+
