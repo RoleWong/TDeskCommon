@@ -205,6 +205,7 @@
     }
     if (self.messageData.direction == MsgDirectionIncoming) {
         self.avatarView.hidden = !self.messageData.showAvatar;
+//        self.avatarView.hidden = YES;
         [self.avatarView mas_remakeConstraints:^(MASConstraintMaker *make) {
           if (self.messageData.showCheckBox) {
               make.leading.mas_equalTo(self.selectedIcon.mas_trailing).mas_offset(cellLayout.avatarInsets.left);
