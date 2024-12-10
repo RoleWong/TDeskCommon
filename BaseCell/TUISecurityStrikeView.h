@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) UILabel * textLabel;
 
 + (UIImage *)changeImageColorWith:(UIColor *)color image:(UIImage *)image alpha:(CGFloat)alpha;
++ (UIImage *)changeImageToGradientWithColor1:(UIColor *)color1 color2:(UIColor *)color2 image:(UIImage *)image alpha:(CGFloat)alpha;
 @end
 
 NS_ASSUME_NONNULL_END

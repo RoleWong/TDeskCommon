@@ -69,5 +69,38 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+
++ (UIImage *)changeImageToGradientWithColor1:(UIColor *)color1 color2:(UIColor *)color2 image:(UIImage *)image alpha:(CGFloat)alpha {
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextTranslateCTM(context, 0, image.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    
+    CGContextSetAlpha(context, alpha);
+    CGContextSetBlendMode(context, kCGBlendModeNormal);
+    
+    CGRect rect = CGRectMake(0, 0, image.size.width, image.size.height);
+    
+    CGContextClipToMask(context, rect, image.CGImage);
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    NSArray *colors = @[(__bridge id)color1.CGColor, (__bridge id)color2.CGColor];
+    CGFloat locations[] = {0.0, 1.0};
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, locations);
+    
+    CGPoint startPoint = CGPointMake(image.size.width, 0);
+    CGPoint endPoint = CGPointMake(0, image.size.height);
+    CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, 0);
+    
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
 @end
 

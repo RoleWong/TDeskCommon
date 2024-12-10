@@ -709,6 +709,16 @@
 "TUIChatBotAccounts" = "إنسان آلي";
 "TUIChatBotChangeQuestion" = "غيره";
 
+"TUICustomerTaskFieldRequired" = "الرجاء ملء الحقل المطلوب";
+"TUICustomerTaskSelectionFieldRequired" = "الرجاء اختيار خيار";
+"TUICustomerSubmit" = "إرسال";
+"TUICustomerFillin" = "املأ";
+"TUICustomerFillinNow" = "املأ الآن";
+"TUICustomerNotEditable" = "غير قابل للتعديل";
+"TUICustomerView" = "عرض المحتوى";
+"TUICustomerHumanService" = "خدمة العملاء";
+
+
 "TUIConversationGroupAll" = "الكل";
 "TUIConversationGroupUnread" = "غير مقروءة";
 "TUIConversationGroupAtMe" = "@ لي";

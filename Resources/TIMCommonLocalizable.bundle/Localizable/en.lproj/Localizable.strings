@@ -717,6 +717,17 @@
 "TUIChatBotAccounts" = "Chat Bot";
 "TUIChatBotChangeQuestion" = "Change it";
 
+"TUICustomerTaskFieldRequired" = "Required field";
+"TUICustomerTaskSelectionFieldRequired" = "Select an option";
+"TUICustomerSubmit" = "Submit";
+"TUICustomerFillin" = "Fill in";
+"TUICustomerFillinNow" = "Fill now";
+"TUICustomerNotEditable" = "Not editable";
+"TUICustomerView" = "View";
+"TUICustomerHumanService" = "Human Service";
+
+
+
 "TUIConversationGroupAll" = "All";
 "TUIConversationGroupUnread" = "Unread";
 "TUIConversationGroupAtMe" = "@ Me";

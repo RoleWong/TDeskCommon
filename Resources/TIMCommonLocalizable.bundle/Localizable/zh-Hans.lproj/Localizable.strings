@@ -716,6 +716,16 @@
 "TUIChatBotAccounts" = "机器人";
 "TUIChatBotChangeQuestion" = "换一换";
 
+"TUICustomerTaskFieldRequired" = "请填写必填项";
+"TUICustomerTaskSelectionFieldRequired" = "请选择一个选项";
+"TUICustomerSubmit" = "提交";
+"TUICustomerFillin" = "填写";
+"TUICustomerFillinNow" = "立即填写";
+"TUICustomerNotEditable" = "不可编辑";
+"TUICustomerView" = "查看内容";
+"TUICustomerHumanService" = "人工服务";
+
+
 "TUIConversationGroupAll" = "全部";
 "TUIConversationGroupUnread" = "未读";
 "TUIConversationGroupAtMe" = "@ 我";

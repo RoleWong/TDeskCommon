@@ -29,7 +29,60 @@
 - (void)fillWithData:(TUIBubbleMessageCellData *)data {
     [super fillWithData:data];
     self.bubbleData = data;
-    self.bubbleView.image = self.getBubble;
+    if (data.direction == MsgDirectionIncoming) {
+        // 设置气泡背景图像
+        self.bubbleView.image = self.getBubble;
+        self.bubbleView.backgroundColor = nil;
+
+        // 移除所有可能的渐变背景层
+        for (CALayer *sublayer in [self.bubbleView.layer.sublayers copy]) {
+            if ([sublayer isKindOfClass:[CAGradientLayer class]]) {
+                [sublayer removeFromSuperlayer];
+            }
+        }
+
+        // 移除圆角矩形边框
+        self.bubbleView.layer.cornerRadius = 0;
+        self.bubbleView.layer.borderWidth = 0;
+        self.bubbleView.layer.borderColor = nil;
+        self.bubbleView.layer.mask = nil; // 移除自定义遮罩
+    } else {
+        // 清除气泡背景图像
+        self.bubbleView.image = nil;
+
+        // 移除之前可能存在的渐变背景层
+        for (CALayer *sublayer in [self.bubbleView.layer.sublayers copy]) {
+            if ([sublayer isKindOfClass:[CAGradientLayer class]]) {
+                [sublayer removeFromSuperlayer];
+            }
+        }
+
+        // 添加从右上角到左下角的渐变色背景
+        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+        gradientLayer.frame = self.bubbleView.bounds;
+        gradientLayer.colors = @[
+            (id)[UIColor colorWithRed:3/255.0 green:200/255.0 blue:253/255.0 alpha:1.0].CGColor, // 起始颜色 #03C8FD
+            (id)[UIColor colorWithRed:28/255.0 green:102/255.0 blue:229/255.0 alpha:1.0].CGColor  // 结束颜色 #1C66E5
+        ];
+        gradientLayer.startPoint = CGPointMake(1.0, 0.0); // 右上角
+        gradientLayer.endPoint = CGPointMake(0.0, 1.0);   // 左下角
+        [self.bubbleView.layer insertSublayer:gradientLayer atIndex:0];
+
+        // 设置圆角矩形（右上角为直角）
+        UIBezierPath *roundedPath = [UIBezierPath bezierPathWithRoundedRect:self.bubbleView.bounds
+                                                         byRoundingCorners:(UIRectCornerTopLeft |
+                                                                            UIRectCornerBottomLeft |
+                                                                            UIRectCornerBottomRight)
+                                                               cornerRadii:CGSizeMake(10.0, 10.0)];
+        CAShapeLayer *maskLayer = [CAShapeLayer layer];
+        maskLayer.path = roundedPath.CGPath;
+        self.bubbleView.layer.mask = maskLayer;
+
+        // 移除边框颜色
+        self.bubbleView.layer.borderWidth = 0;
+        self.bubbleView.layer.borderColor = nil;
+    }
+
     self.bubbleView.highlightedImage = self.getHighlightBubble;
     self.securityStrikeView.hidden = YES;
     BOOL hasRiskContent = self.messageData.innerMessage.hasRiskContent;
@@ -188,9 +241,14 @@ static UIImage *gOutgoingBubble;
 
 + (UIImage *)outgoingBubble {
     if (!gOutgoingBubble) {
+        // 获取默认的气泡图片
         UIImage *defaultImage = [[TUIImageCache sharedInstance] getResourceFromCache:TUIChatImagePath(@"SenderTextNodeBkg")];
         UIImage *formatImage = TUIChatDynamicImage(@"chat_bubble_send_img", defaultImage);
+
+        // 处理右到左布局
         formatImage = [formatImage rtl_imageFlippedForRightToLeftLayoutDirection];
+
+        // 设置 resizableImage，使四个角保持不变
         UIEdgeInsets ei = UIEdgeInsetsFromString(@"{12,12,12,12}");
         ei = rtlEdgeInsetsWithInsets(ei);
         gOutgoingBubble = [formatImage resizableImageWithCapInsets:ei resizingMode:UIImageResizingModeStretch];
