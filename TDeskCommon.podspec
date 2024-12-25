@@ -1,27 +1,28 @@
 Pod::Spec.new do |spec|
   spec.name         = 'TDeskCommon'
-  spec.version      = '2.3.1'
+  spec.version      = '2.4.0'
   spec.platform     = :ios
   spec.ios.deployment_target = '9.0'
   spec.license      = { :type => 'Proprietary',
       :text => <<-LICENSE
-        copyright 2017 tencent Ltd. All rights reserved.
+        copyright 2017 Tencent Ltd. All rights reserved.
         LICENSE
        }
   spec.homepage     = 'https://cloud.tencent.com/document/product/269/3794'
   spec.documentation_url = 'https://cloud.tencent.com/document/product/269/9147'
-  spec.authors      = 'tencent video cloud'
+  spec.authors      = 'Tencent Cloud Desk'
   spec.summary      = 'TIMCommon'
   
 #  spec.vendored_frameworks = 'ReactiveObjCForTDesk.framework'
   
-  spec.dependency 'TDeskCore', '~> 2.3.0'
+  spec.dependency 'TDeskCore', '~> 2.4.0'
   spec.dependency 'SDWebImage'
-  spec.dependency 'ReactiveObjCForTDesk'
+  spec.dependency 'ReactiveObjC'
   spec.dependency 'MasonryForTDesk'
   spec.requires_arc = true
 
   spec.source = { :git => 'https://github.com/RoleWong/TDeskCommon.git', :tag => spec.version}
+
   spec.source_files = '**/*.{h,m,mm,c}'
 
   spec.resource = ['Resources/*.bundle']
