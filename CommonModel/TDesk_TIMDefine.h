@@ -9,7 +9,7 @@
 #ifndef TIMDefine_h
 #define TIMDefine_h
 
-#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveObjCForTDesk/TDesk_ReactiveObjC.h>
 #import <TDeskCore/TDesk_TUIDefine.h>
 #import <MasonryForTDesk/Masonry.h>
 #import "TDesk_TIMConfig.h"
