@@ -42,17 +42,17 @@ typedef enum : NSUInteger {
 
     self.leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self addSubview:self.leftButton];
-    [self.leftButton setTitle:TIMCommonLocalizableString(TUIKitCreateCancel) forState:UIControlStateNormal];
+    [self.leftButton setTitle:TDeskIMCommonLocalizableString(TUIKitCreateCancel) forState:UIControlStateNormal];
     self.leftButton.titleLabel.font = [UIFont systemFontOfSize:kScale390(16)];
     [self.leftButton addTarget:self action:@selector(leftButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.leftButton setTitleColor:[UIColor tui_colorWithHex:@"#0365F9"] forState:UIControlStateNormal];
+    [self.leftButton setTitleColor:[UIColor tdesk_colorWithHex:@"#0365F9"] forState:UIControlStateNormal];
 
     self.rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self addSubview:self.rightButton];
-    [self.rightButton setTitle:TIMCommonLocalizableString(TUIKitCreateNext) forState:UIControlStateNormal];
+    [self.rightButton setTitle:TDeskIMCommonLocalizableString(TUIKitCreateNext) forState:UIControlStateNormal];
     self.rightButton.titleLabel.font = [UIFont systemFontOfSize:kScale390(16)];
     [self.rightButton addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.rightButton setTitleColor:[UIColor tui_colorWithHex:@"#0365F9"] forState:UIControlStateNormal];
+    [self.rightButton setTitleColor:[UIColor tdesk_colorWithHex:@"#0365F9"] forState:UIControlStateNormal];
 }
 
 - (void)layoutSubviews {
@@ -129,7 +129,7 @@ typedef enum : NSUInteger {
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor tui_colorWithHex:@"#000000" alpha:0.6];
+    self.view.backgroundColor = [UIColor tdesk_colorWithHex:@"#000000" alpha:0.6];
     self.modalPresentationStyle = UIModalPresentationCustom;
 
     self.containerView.backgroundColor = [UIColor whiteColor];

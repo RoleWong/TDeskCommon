@@ -23,7 +23,7 @@ typedef NS_OPTIONS(NSInteger, emojiFaceType) {
 @implementation TDeskIMConfig
 
 + (void)load {
-    TDeskRegisterThemeResourcePath(TIMCommonThemePath, TUIThemeModuleTIMCommon);
+    TDeskRegisterThemeResourcePath(TDeskCommonThemePath, TUIThemeModuleTIMCommon);
 }
 
 - (id)init {

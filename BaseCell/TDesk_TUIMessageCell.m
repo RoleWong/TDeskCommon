@@ -383,7 +383,7 @@
 
     self.messageModifyRepliesButton.hidden = !data.showMessageModifyReplies;
     if (data.showMessageModifyReplies) {
-        NSString *title = [NSString stringWithFormat:@"%ld%@", data.messageModifyReplies.count, TIMCommonLocalizableString(TUIKitRepliesNum)];
+        NSString *title = [NSString stringWithFormat:@"%ld%@", data.messageModifyReplies.count, TDeskIMCommonLocalizableString(TUIKitRepliesNum)];
         [self.messageModifyRepliesButton setTitle:title forState:UIControlStateNormal];
         [self.messageModifyRepliesButton sizeToFit];
         [self.messageModifyRepliesButton setNeedsUpdateConstraints];
@@ -473,7 +473,7 @@
 - (void)updateReadLabelText {
     if (self.messageData.innerMessage.groupID.length > 0) {
         // group message
-        NSString *text = TIMCommonLocalizableString(Unread);
+        NSString *text = TDeskIMCommonLocalizableString(Unread);
         if (self.messageData.messageReceipt == nil) {
             // haven't received the message receipt yet
             return;
@@ -482,16 +482,16 @@
         NSInteger unreadCount = self.messageData.messageReceipt.unreadCount;
         if (unreadCount == 0) {
             // show "All read"
-            text = TIMCommonLocalizableString(TUIKitMessageReadAllRead);
+            text = TDeskIMCommonLocalizableString(TUIKitMessageReadAllRead);
         } else if (readCount > 0) {
             // show "x read"
-            text = [NSString stringWithFormat:@"%ld %@", (long)readCount, TIMCommonLocalizableString(TUIKitMessageReadPartRead)];
+            text = [NSString stringWithFormat:@"%ld %@", (long)readCount, TDeskIMCommonLocalizableString(TUIKitMessageReadPartRead)];
         }
         self.readReceiptLabel.text = text;
     } else {
         // c2c message
         BOOL isPeerRead = self.messageData.messageReceipt.isPeerRead;
-        NSString *text = isPeerRead ? TIMCommonLocalizableString(TUIKitMessageReadC2CRead) : TIMCommonLocalizableString(TUIKitMessageReadC2CUnRead);
+        NSString *text = isPeerRead ? TDeskIMCommonLocalizableString(TUIKitMessageReadC2CRead) : TDeskIMCommonLocalizableString(TUIKitMessageReadC2CUnRead);
         self.readReceiptLabel.text = text;
     }
     
@@ -598,9 +598,9 @@
 }
 - (BOOL)shouldHighlightReadReceiptLabel {
     if (self.messageData.innerMessage.groupID.length == 0) {
-        return ![self.readReceiptLabel.text isEqualToString:TIMCommonLocalizableString(TUIKitMessageReadC2CRead)];
+        return ![self.readReceiptLabel.text isEqualToString:TDeskIMCommonLocalizableString(TUIKitMessageReadC2CRead)];
     } else {
-        return ![self.readReceiptLabel.text isEqualToString:TIMCommonLocalizableString(TUIKitMessageReadAllRead)];
+        return ![self.readReceiptLabel.text isEqualToString:TDeskIMCommonLocalizableString(TUIKitMessageReadAllRead)];
     }
 }
 

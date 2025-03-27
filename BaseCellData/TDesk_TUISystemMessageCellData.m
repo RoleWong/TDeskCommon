@@ -47,7 +47,7 @@
         NSDictionary *attributeDict = @{NSForegroundColorAttributeName : [UIColor d_systemGrayColor]};
         [attributeString setAttributes:attributeDict range:NSMakeRange(0, attributeString.length)];
         if (self.supportReEdit) {
-            NSString *reEditStr = TIMCommonLocalizableString(TUIKitMessageTipsReEditMessage);
+            NSString *reEditStr = TDeskIMCommonLocalizableString(TUIKitMessageTipsReEditMessage);
             [attributeString appendAttributedString:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@", reEditStr]]];
             NSDictionary *attributeDict = @{NSForegroundColorAttributeName : [UIColor d_systemBlueColor]};
             [attributeString setAttributes:attributeDict range:NSMakeRange(self.content.length + 1, reEditStr.length)];

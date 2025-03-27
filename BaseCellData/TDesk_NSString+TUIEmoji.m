@@ -147,7 +147,7 @@
                 /**
                  * - Create a new NSTextAttachment to store our image
                  */
-                TUIEmojiTextAttachment *emojiTextAttachment = [[TUIEmojiTextAttachment alloc] init];
+                TDeskEmojiTextAttachment *emojiTextAttachment = [[TDeskEmojiTextAttachment alloc] init];
                 emojiTextAttachment.faceCellData = face;
 
                 NSString *localizableFaceName =  face.name;
@@ -277,7 +277,7 @@
 
         for (TDeskFaceCellData *face in group.faces) {
             if ([face.name isEqualToString:subStr] || [face.localizableName isEqualToString:subStr]) {
-                TUIEmojiTextAttachment *emojiTextAttachment = [[TUIEmojiTextAttachment alloc] init];
+                TDeskEmojiTextAttachment *emojiTextAttachment = [[TDeskEmojiTextAttachment alloc] init];
                 emojiTextAttachment.faceCellData = face;
 
                 // Set tag and image
@@ -613,7 +613,7 @@
 
 @implementation NSAttributedString (EmojiExtension)
 
-- (NSString *)tui_getPlainString {
+- (NSString *)tdesk_getPlainString {
     NSMutableString *plainString = [NSMutableString stringWithString:self.string];
     __block NSUInteger base = 0;
 
@@ -621,10 +621,10 @@
                      inRange:NSMakeRange(0, self.length)
                      options:0
                   usingBlock:^(id value, NSRange range, BOOL *stop) {
-                    if (value && [value isKindOfClass:[TUIEmojiTextAttachment class]]) {
+                    if (value && [value isKindOfClass:[TDeskEmojiTextAttachment class]]) {
                         [plainString replaceCharactersInRange:NSMakeRange(range.location + base, range.length)
-                                                   withString:((TUIEmojiTextAttachment *)value).emojiTag];
-                        base += ((TUIEmojiTextAttachment *)value).emojiTag.length - 1;
+                                                   withString:((TDeskEmojiTextAttachment *)value).emojiTag];
+                        base += ((TDeskEmojiTextAttachment *)value).emojiTag.length - 1;
                     }
                   }];
 

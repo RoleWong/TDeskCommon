@@ -94,20 +94,20 @@
     NSString *openSettingMessage = @"";
 
     if (TUIChatAuthControlTypeMicro == type) {
-        title = TIMCommonLocalizableString(TUIKitInputNoMicTitle);
-        message = TIMCommonLocalizableString(TUIKitInputNoMicTips);
-        laterMessage = TIMCommonLocalizableString(TUIKitInputNoMicOperateLater);
-        openSettingMessage = TIMCommonLocalizableString(TUIKitInputNoMicOperateEnable);
+        title = TDeskIMCommonLocalizableString(TUIKitInputNoMicTitle);
+        message = TDeskIMCommonLocalizableString(TUIKitInputNoMicTips);
+        laterMessage = TDeskIMCommonLocalizableString(TUIKitInputNoMicOperateLater);
+        openSettingMessage = TDeskIMCommonLocalizableString(TUIKitInputNoMicOperateEnable);
     } else if (TUIChatAuthControlTypeCamera == type) {
-        title = TIMCommonLocalizableString(TUIKitInputNoCameraTitle);
-        message = TIMCommonLocalizableString(TUIKitInputNoCameraTips);
-        laterMessage = TIMCommonLocalizableString(TUIKitInputNoCameraOperateLater);
-        openSettingMessage = TIMCommonLocalizableString(TUIKitInputNoCameraOperateEnable);
+        title = TDeskIMCommonLocalizableString(TUIKitInputNoCameraTitle);
+        message = TDeskIMCommonLocalizableString(TUIKitInputNoCameraTips);
+        laterMessage = TDeskIMCommonLocalizableString(TUIKitInputNoCameraOperateLater);
+        openSettingMessage = TDeskIMCommonLocalizableString(TUIKitInputNoCameraOperateEnable);
     } else if (TUIChatAuthControlTypePhoto == type) {
-        title = TIMCommonLocalizableString(TUIKitInputNoPhotoTitle);
-        message = TIMCommonLocalizableString(TUIKitInputNoPhotoTips);
-        laterMessage = TIMCommonLocalizableString(TUIKitInputNoPhotoOperateLater);
-        openSettingMessage = TIMCommonLocalizableString(TUIKitInputNoPhotoerateEnable);
+        title = TDeskIMCommonLocalizableString(TUIKitInputNoPhotoTitle);
+        message = TDeskIMCommonLocalizableString(TUIKitInputNoPhotoTips);
+        laterMessage = TDeskIMCommonLocalizableString(TUIKitInputNoPhotoOperateLater);
+        openSettingMessage = TDeskIMCommonLocalizableString(TUIKitInputNoPhotoerateEnable);
     } else {
         return;
     }

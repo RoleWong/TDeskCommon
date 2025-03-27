@@ -193,12 +193,12 @@ static inline CGSize formatCTFramesetterSuggestFrameSizeForAttributedStringWithC
     return CGSizeMake(formatCGFloatCeil(suggestedSize.width), formatCGFloatCeil(suggestedSize.height));
 }
 
-@interface TUIAccessibilityElement : UIAccessibilityElement
+@interface TDeskAccessibilityElement : UIAccessibilityElement
 @property(nonatomic, weak) UIView *superview;
 @property(nonatomic, assign) CGRect boundingRect;
 @end
 
-@implementation TUIAccessibilityElement
+@implementation TDeskAccessibilityElement
 
 - (CGRect)accessibilityFrame {
     return UIAccessibilityConvertFrameToScreenCoordinates(self.boundingRect, self.superview);
@@ -1267,7 +1267,7 @@ static inline CGSize formatCTFramesetterSuggestFrameSizeForAttributedStringWithC
                 NSString *accessibilityValue = link.accessibilityValue;
 
                 if (accessibilityLabel) {
-                    TUIAccessibilityElement *linkElement = [[TUIAccessibilityElement alloc] initWithAccessibilityContainer:self];
+                    TDeskAccessibilityElement *linkElement = [[TDeskAccessibilityElement alloc] initWithAccessibilityContainer:self];
                     linkElement.accessibilityTraits = UIAccessibilityTraitLink;
                     linkElement.boundingRect = [self boundingRectForCharacterRange:link.result.range];
                     linkElement.superview = self;
@@ -1281,7 +1281,7 @@ static inline CGSize formatCTFramesetterSuggestFrameSizeForAttributedStringWithC
                 }
             }
 
-            TUIAccessibilityElement *baseElement = [[TUIAccessibilityElement alloc] initWithAccessibilityContainer:self];
+            TDeskAccessibilityElement *baseElement = [[TDeskAccessibilityElement alloc] initWithAccessibilityContainer:self];
             baseElement.accessibilityLabel = [super accessibilityLabel];
             baseElement.accessibilityHint = [super accessibilityHint];
             baseElement.accessibilityValue = [super accessibilityValue];

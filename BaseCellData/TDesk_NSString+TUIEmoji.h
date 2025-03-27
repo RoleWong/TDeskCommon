@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  *
- * Get the formatted emoji (after the image and text are mixed together) The emoji is stored in the TUIEmojiTextAttachment object, which can carry parameters.
+ * Get the formatted emoji (after the image and text are mixed together) The emoji is stored in the TDeskEmojiTextAttachment object, which can carry parameters.
  * For example: the original text is @"Hello,[cry]", then this method turns the text into @"Hello,😭"
  */
 - (NSMutableAttributedString *)getAdvancedFormatEmojiStringWithFont:(UIFont *)textFont
@@ -83,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
  *   @"你好,😭""  ->  @"你好,[大哭]"
  *   @"Hello,😭"  ->  @"Hello,[Cry]"
  */
-- (NSString *)tui_getPlainString;
+- (NSString *)tdesk_getPlainString;
 
 @end
 

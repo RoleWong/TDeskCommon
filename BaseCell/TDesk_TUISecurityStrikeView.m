@@ -29,7 +29,7 @@
     self.textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     [self addSubview:self.textLabel];
     self.textLabel.font = [UIFont systemFontOfSize:14];
-    self.textLabel.text = TIMCommonLocalizableString(TUIKitMessageTypeSecurityStrike);
+    self.textLabel.text = TDeskIMCommonLocalizableString(TUIKitMessageTypeSecurityStrike);
     self.textLabel.textColor = TUIDynamicColor(@"", TUIThemeModuleTIMCommon, @"#DA2222");
     self.textLabel.numberOfLines = 0;
     self.textLabel.textAlignment = isRTL()?NSTextAlignmentRight:NSTextAlignmentLeft;

@@ -216,8 +216,8 @@
 }
 
 - (void)prepareReactTagUI:(UIView *)containerView {
-    NSDictionary *param = @{TUICore_TUIChatExtension_ChatMessageReactPreview_Delegate: self};
-    [TDeskCore raiseExtension:TUICore_TUIChatExtension_ChatMessageReactPreview_ClassicExtensionID parentView:containerView param:param];
+    NSDictionary *param = @{TDeskCore_TUIChatExtension_ChatMessageReactPreview_Delegate: self};
+    [TDeskCore raiseExtension:TDeskCore_TUIChatExtension_ChatMessageReactPreview_ClassicExtensionID parentView:containerView param:param];
 }
 
 + (CGFloat)getBubbleTop:(TDeskBubbleMessageCellData *)data {
@@ -282,7 +282,7 @@ static UIImage *gOutgoingErrorBubble;
     if (!gOutgoingErrorBubble) {
         UIImage *defaultImage = [[TDeskImageCache sharedInstance] getResourceFromCache:TUIChatImagePath(@"SenderTextNodeBkg")];
         UIImage *formatImage = TUIChatDynamicImage(@"chat_bubble_send_img", defaultImage);
-        formatImage = [TDeskSecurityStrikeView changeImageColorWith:[UIColor tui_colorWithHex:@"#FA5151" alpha:0.16] image:formatImage alpha:1];
+        formatImage = [TDeskSecurityStrikeView changeImageColorWith:[UIColor tdesk_colorWithHex:@"#FA5151" alpha:0.16] image:formatImage alpha:1];
         formatImage = [formatImage rtl_imageFlippedForRightToLeftLayoutDirection];
         UIEdgeInsets ei = UIEdgeInsetsFromString(@"{12,12,12,12}");
         ei = rtlEdgeInsetsWithInsets(ei);
@@ -330,7 +330,7 @@ static UIImage *gIncommingErrorBubble;
     if (!gIncommingErrorBubble) {
         UIImage *defaultImage = [[TDeskImageCache sharedInstance] getResourceFromCache:TUIChatImagePath(@"ReceiverTextNodeBkg")];
         UIImage *formatImage = TUIChatDynamicImage(@"chat_bubble_receive_img", defaultImage);
-        formatImage = [TDeskSecurityStrikeView changeImageColorWith:[UIColor tui_colorWithHex:@"#FA5151" alpha:0.16] image:formatImage alpha:1];
+        formatImage = [TDeskSecurityStrikeView changeImageColorWith:[UIColor tdesk_colorWithHex:@"#FA5151" alpha:0.16] image:formatImage alpha:1];
         formatImage = [formatImage rtl_imageFlippedForRightToLeftLayoutDirection];
         UIEdgeInsets ei = UIEdgeInsetsFromString(@"{12,12,12,12}");
         ei = rtlEdgeInsetsWithInsets(ei);

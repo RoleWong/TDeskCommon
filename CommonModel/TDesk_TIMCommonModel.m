@@ -10,15 +10,15 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 //
-//                           TUIPopView
+//                           TDeskPopView
 //
 /////////////////////////////////////////////////////////////////////////////////
 
-@interface TUIPopView () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
+@interface TDeskPopView () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 @property(nonatomic, strong) NSMutableArray *data;
 @end
 
-@implementation TUIPopView
+@implementation TDeskPopView
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -72,13 +72,13 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [TUIPopCell getHeight];
+    return [TDeskPopCell getHeight];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TUIPopCell *cell = [tableView dequeueReusableCellWithIdentifier:TUIPopCell_ReuseId];
+    TDeskPopCell *cell = [tableView dequeueReusableCellWithIdentifier:TUIPopCell_ReuseId];
     if (!cell) {
-        cell = [[TUIPopCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TUIPopCell_ReuseId];
+        cell = [[TDeskPopCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TUIPopCell_ReuseId];
     }
     [cell setData:_data[indexPath.row]];
     if (indexPath.row == _data.count - 1) {
@@ -135,10 +135,10 @@
 }
 @end
 
-@implementation TUIPopCellData
+@implementation TDeskPopCellData
 @end
 
-@implementation TUIPopCell
+@implementation TDeskPopCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -180,7 +180,7 @@
     }
 }
 
-- (void)setData:(TUIPopCellData *)data {
+- (void)setData:(TDeskPopCellData *)data {
     _image.image = data.image;
     _title.text = data.title;
 }
@@ -192,13 +192,13 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 //
-//                           TUIModifyView
+//                           TDeskModifyView
 //
 /////////////////////////////////////////////////////////////////////////////////
 #define kContainerWidth Screen_Width
 #define kContainerHeight kContainerWidth * 3 / 4
 
-@implementation TUIModifyViewData
+@implementation TDeskModifyViewData
 - (instancetype)init {
     if (self = [super init]) {
         self.enableNull = NO;
@@ -207,13 +207,13 @@
 }
 @end
 
-@interface TUIModifyView () <UITextFieldDelegate, UIGestureRecognizerDelegate>
+@interface TDeskModifyView () <UITextFieldDelegate, UIGestureRecognizerDelegate>
 @property(nonatomic, assign) BOOL keyboardShowing;
-@property(nonatomic, strong) TUIModifyViewData *data;
+@property(nonatomic, strong) TDeskModifyViewData *data;
 @property(nonatomic, strong) UIButton *closeBtn;
 @end
 
-@implementation TUIModifyView
+@implementation TDeskModifyView
 - (id)init {
     self = [super init];
     if (self) {
@@ -289,7 +289,7 @@
     [_container addSubview:_descLabel];
 
     _confirm = [[UIButton alloc] initWithFrame:CGRectMake(_content.frame.origin.x, CGRectGetMaxY(_descLabel.frame) + 30, contentWidth, buttonHeight)];
-    [_confirm setTitle:TIMCommonLocalizableString(Confirm) forState:UIControlStateNormal];
+    [_confirm setTitle:TDeskIMCommonLocalizableString(Confirm) forState:UIControlStateNormal];
     [_confirm setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _confirm.titleLabel.font = [UIFont systemFontOfSize:15];
     _confirm.layer.cornerRadius = 8;
@@ -306,7 +306,7 @@
     [_container addSubview:_closeBtn];
 }
 
-- (void)setData:(TUIModifyViewData *)data {
+- (void)setData:(TDeskModifyViewData *)data {
     _title.text = data.title;
     _content.text = data.content;
     _descLabel.text = data.desc;
@@ -432,10 +432,10 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 //
-//                           TUINaviBarIndicatorView
+//                           TDeskNaviBarIndicatorView
 //
 /////////////////////////////////////////////////////////////////////////////////
-@implementation TUINaviBarIndicatorView
+@implementation TDeskNaviBarIndicatorView
 - (id)init {
     self = [super init];
     if (self) {
@@ -864,9 +864,9 @@
     _requestMsg = args.requestMsg;
     if (_requestMsg.length == 0) {
         if (args.applicationType == V2TIM_GROUP_INVITE_APPLICATION_NEED_APPROVED_BY_ADMIN) {
-            _requestMsg = [NSString stringWithFormat:TIMCommonLocalizableString(TUIKitInviteJoinGroupFormat), _toUser];
+            _requestMsg = [NSString stringWithFormat:TDeskIMCommonLocalizableString(TUIKitInviteJoinGroupFormat), _toUser];
         } else {
-            _requestMsg = [NSString stringWithFormat:TIMCommonLocalizableString(TUIKitWhoRequestForJoinGroupFormat), _title];
+            _requestMsg = [NSString stringWithFormat:TDeskIMCommonLocalizableString(TUIKitWhoRequestForJoinGroupFormat), _title];
         }
     }
 
@@ -875,10 +875,10 @@
 
 - (void)accept {
     [[V2TIMManager sharedInstance] acceptGroupApplication:_pendencyItem
-        reason:TIMCommonLocalizableString(TUIKitAgreedByAdministor)
+        reason:TDeskIMCommonLocalizableString(TUIKitAgreedByAdministor)
         succ:^{
-          [TDeskTool makeToast:TIMCommonLocalizableString(Have_been_sent)];
-          [[NSNotificationCenter defaultCenter] postNotificationName:TUIGroupPendencyCellData_onPendencyChanged object:nil];
+          [TDeskTool makeToast:TDeskIMCommonLocalizableString(Have_been_sent)];
+          [[NSNotificationCenter defaultCenter] postNotificationName:TDeskGroupPendencyCellData_onPendencyChanged object:nil];
           ;
         }
         fail:^(int code, NSString *msg) {
@@ -888,10 +888,10 @@
 }
 - (void)reject {
     [[V2TIMManager sharedInstance] refuseGroupApplication:_pendencyItem
-        reason:TIMCommonLocalizableString(TUIkitDiscliedByAdministor)
+        reason:TDeskIMCommonLocalizableString(TUIkitDiscliedByAdministor)
         succ:^{
-          [TDeskTool makeToast:TIMCommonLocalizableString(Have_been_sent)];
-          [[NSNotificationCenter defaultCenter] postNotificationName:TUIGroupPendencyCellData_onPendencyChanged object:nil];
+          [TDeskTool makeToast:TDeskIMCommonLocalizableString(Have_been_sent)];
+          [[NSNotificationCenter defaultCenter] postNotificationName:TDeskGroupPendencyCellData_onPendencyChanged object:nil];
           ;
         }
         fail:^(int code, NSString *msg) {
@@ -955,7 +955,7 @@
     [[RACObserve(pendencyData, isAccepted) takeUntil:self.rac_prepareForReuseSignal] subscribeNext:^(NSNumber *isAccepted) {
       @strongify(self);
       if ([isAccepted boolValue]) {
-          [self.agreeButton setTitle:TIMCommonLocalizableString(Agreed) forState:UIControlStateNormal];
+          [self.agreeButton setTitle:TDeskIMCommonLocalizableString(Agreed) forState:UIControlStateNormal];
           self.agreeButton.enabled = NO;
           [self.agreeButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
           self.agreeButton.layer.borderColor = [UIColor clearColor].CGColor;
@@ -964,7 +964,7 @@
     [[RACObserve(pendencyData, isRejectd) takeUntil:self.rac_prepareForReuseSignal] subscribeNext:^(NSNumber *isAccepted) {
       @strongify(self);
       if ([isAccepted boolValue]) {
-          [self.agreeButton setTitle:TIMCommonLocalizableString(Disclined) forState:UIControlStateNormal];
+          [self.agreeButton setTitle:TDeskIMCommonLocalizableString(Disclined) forState:UIControlStateNormal];
           self.agreeButton.enabled = NO;
           [self.agreeButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
           self.agreeButton.layer.borderColor = [UIColor clearColor].CGColor;
@@ -972,7 +972,7 @@
     }];
 
     if (!(pendencyData.isAccepted || pendencyData.isRejectd)) {
-        [self.agreeButton setTitle:TIMCommonLocalizableString(Agree) forState:UIControlStateNormal];
+        [self.agreeButton setTitle:TDeskIMCommonLocalizableString(Agree) forState:UIControlStateNormal];
         self.agreeButton.enabled = YES;
         [self.agreeButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
         self.agreeButton.layer.borderColor = [UIColor grayColor].CGColor;
@@ -1209,7 +1209,7 @@
 }
 @end
 
-@implementation TUIEmojiTextAttachment
+@implementation TDeskEmojiTextAttachment
 
 - (CGRect)attachmentBoundsForTextContainer:(NSTextContainer *)textContainer
                       proposedLineFragment:(CGRect)lineFrag
@@ -1488,7 +1488,7 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
     self.accessoryBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.accessoryBtn setBackgroundImage:TIMCommonBundleImage(@"icon_cell_blue_normal") forState:UIControlStateNormal];
     [self.accessoryBtn setBackgroundImage:TIMCommonBundleImage(@"icon_cell_blue_normal") forState:UIControlStateHighlighted];
-    [self.accessoryBtn setTitle:[NSString stringWithFormat:@" %@ ", TIMCommonLocalizableString(Confirm)] forState:UIControlStateNormal];
+    [self.accessoryBtn setTitle:[NSString stringWithFormat:@" %@ ", TDeskIMCommonLocalizableString(Confirm)] forState:UIControlStateNormal];
     self.accessoryBtn.enabled = NO;
     [self addSubview:self.accessoryBtn];
 }
@@ -1567,9 +1567,9 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
     if (self) {
         _avatarImage = DefaultAvatarImage;
 
-        if ([_genderString isEqualToString:TIMCommonLocalizableString(Male)]) {
+        if ([_genderString isEqualToString:TDeskIMCommonLocalizableString(Male)]) {
             _genderIconImage = TUIGroupCommonBundleImage(@"male");
-        } else if ([_genderString isEqualToString:TIMCommonLocalizableString(Female)]) {
+        } else if ([_genderString isEqualToString:TDeskIMCommonLocalizableString(Female)]) {
             _genderIconImage = TUIGroupCommonBundleImage(@"female");
         } else {
             _genderIconImage = nil;
@@ -1646,7 +1646,7 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
     RAC(_signature, text) = [RACObserve(data, signature) takeUntil:self.rac_prepareForReuseSignal];
     [[[RACObserve(data, identifier) takeUntil:self.rac_prepareForReuseSignal] distinctUntilChanged] subscribeNext:^(NSString *x) {
       @strongify(self);
-        self.identifier.text = [NSString stringWithFormat:@"%@:%@",TIMCommonLocalizableString(TUIKitIdentity),data.identifier];
+        self.identifier.text = [NSString stringWithFormat:@"%@:%@",TDeskIMCommonLocalizableString(TUIKitIdentity),data.identifier];
     }];
 
     [[[RACObserve(data, name) takeUntil:self.rac_prepareForReuseSignal] distinctUntilChanged] subscribeNext:^(NSString *x) {
@@ -1661,9 +1661,9 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
 
     [[RACObserve(data, genderString) takeUntil:self.rac_prepareForReuseSignal] subscribeNext:^(NSString *x) {
       @strongify(self);
-      if ([x isEqualToString:TIMCommonLocalizableString(Male)]) {
+      if ([x isEqualToString:TDeskIMCommonLocalizableString(Male)]) {
           self.genderIcon.image = TUIGroupCommonBundleImage(@"male");
-      } else if ([x isEqualToString:TIMCommonLocalizableString(Female)]) {
+      } else if ([x isEqualToString:TDeskIMCommonLocalizableString(Female)]) {
           self.genderIcon.image = TUIGroupCommonBundleImage(@"female");
       } else {
           self.genderIcon.image = nil;
@@ -1865,7 +1865,7 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
 
 @end
 
-@interface TUISelectAvatarCollectionCell : UICollectionViewCell
+@interface TDeskSelectAvatarCollectionCell : UICollectionViewCell
 
 @property(nonatomic, strong) UIImageView *imageView;
 @property(nonatomic, strong) UIImageView *selectedView;
@@ -1878,7 +1878,7 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
 
 @end
 
-@implementation TUISelectAvatarCollectionCell
+@implementation TDeskSelectAvatarCollectionCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -1943,7 +1943,7 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
         self.maskView.hidden = NO;
         self.maskView.frame = CGRectMake(0, self.imageView.frame.size.height - 28, self.imageView.frame.size.width, 28);
         [self.descLabel sizeToFit];
-        self.descLabel.tui_mm_center();
+        self.descLabel.tdesk_mm_center();
     } else {
         self.maskView.hidden = YES;
     }
@@ -1957,15 +1957,15 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
 
 - (void)setupMaskView {
     self.maskView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.maskView.backgroundColor = [UIColor tui_colorWithHex:@"cccccc"];
+    self.maskView.backgroundColor = [UIColor tdesk_colorWithHex:@"cccccc"];
     [self.imageView addSubview:self.maskView];
     self.descLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    self.descLabel.text = TIMCommonLocalizableString(TUIKitDefaultBackground);
+    self.descLabel.text = TDeskIMCommonLocalizableString(TUIKitDefaultBackground);
     self.descLabel.textColor = [UIColor whiteColor];
     self.descLabel.font = [UIFont systemFontOfSize:13];
     [self.maskView addSubview:self.descLabel];
     [self.descLabel sizeToFit];
-    self.descLabel.tui_mm_center();
+    self.descLabel.tdesk_mm_center();
 }
 
 - (void)setCardItem:(TDeskSelectAvatarCardItem *)cardItem {
@@ -1984,7 +1984,7 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
 
 @interface TDeskSelectAvatarController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
-@property(nonatomic, strong) TUINaviBarIndicatorView *titleView;
+@property(nonatomic, strong) TDeskNaviBarIndicatorView *titleView;
 @property(nonatomic, strong) UICollectionView *collectionView;
 @property(nonatomic, strong) NSMutableArray *dataArr;
 @property(nonatomic, strong) TDeskSelectAvatarCardItem *currentSelectCardItem;
@@ -1994,7 +1994,7 @@ NSString *kTopConversationListChangedNotification = @"kTopConversationListChange
 
 @implementation TDeskSelectAvatarController
 
-static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
+static NSString *const reuseIdentifier = @"TDeskSelectAvatarCollectionCell";
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -2017,7 +2017,7 @@ static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
     self.collectionView.delegate = self;
 
     // Register cell classes
-    [self.collectionView registerClass:[TUISelectAvatarCollectionCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[TDeskSelectAvatarCollectionCell class] forCellWithReuseIdentifier:reuseIdentifier];
 
     // Do any additional setup after loading the view.
     [self setupNavigator];
@@ -2109,20 +2109,20 @@ static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
     return cardItem;
 }
 - (void)setupNavigator {
-    _titleView = [[TUINaviBarIndicatorView alloc] init];
+    _titleView = [[TDeskNaviBarIndicatorView alloc] init];
     self.navigationItem.titleView = _titleView;
     self.navigationItem.title = @"";
 
     if (self.selectAvatarType == TUISelectAvatarTypeCover) {
-        [self.titleView setTitle:TIMCommonLocalizableString(TUIKitChooseCover)];
+        [self.titleView setTitle:TDeskIMCommonLocalizableString(TUIKitChooseCover)];
     } else if (self.selectAvatarType == TUISelectAvatarTypeConversationBackGroundCover) {
-        [self.titleView setTitle:TIMCommonLocalizableString(TUIKitChooseBackground)];
+        [self.titleView setTitle:TDeskIMCommonLocalizableString(TUIKitChooseBackground)];
     } else {
-        [self.titleView setTitle:TIMCommonLocalizableString(TUIKitChooseAvatar)];
+        [self.titleView setTitle:TDeskIMCommonLocalizableString(TUIKitChooseAvatar)];
     }
 
     self.rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [self.rightButton setTitle:TIMCommonLocalizableString(Save) forState:UIControlStateNormal];
+    [self.rightButton setTitle:TDeskIMCommonLocalizableString(Save) forState:UIControlStateNormal];
     [self.rightButton addTarget:self action:@selector(rightBarButtonClick) forControlEvents:UIControlEventTouchUpInside];
     self.rightButton.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
     [self.rightButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
@@ -2159,7 +2159,7 @@ static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
                          dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                            dispatch_async(dispatch_get_main_queue(), ^{
                              [TDeskTool hideToastActivity];
-                             [TDeskTool makeToast:TIMCommonLocalizableString(TUIKitChooseBackgroundSuccess)];
+                             [TDeskTool makeToast:TDeskIMCommonLocalizableString(TUIKitChooseBackgroundSuccess)];
                              if (self.selectCallBack) {
                                  self.selectCallBack(self.currentSelectCardItem.fullUrlStr);
                                  [self.navigationController popViewControllerAnimated:YES];
@@ -2168,7 +2168,7 @@ static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
                          });
                        }];
             } else {
-                [TDeskTool makeToast:TIMCommonLocalizableString(TUIKitChooseBackgroundSuccess)];
+                [TDeskTool makeToast:TDeskIMCommonLocalizableString(TUIKitChooseBackgroundSuccess)];
                 self.selectCallBack(self.currentSelectCardItem.fullUrlStr);
                 [self.navigationController popViewControllerAnimated:YES];
             }
@@ -2222,7 +2222,7 @@ static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    TUISelectAvatarCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    TDeskSelectAvatarCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     // Configure the cell
 
     if (indexPath.row < self.dataArr.count) {
@@ -2237,11 +2237,11 @@ static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [self recoverSelectedStatus];
 
-    TUISelectAvatarCollectionCell *cell = (TUISelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    TDeskSelectAvatarCollectionCell *cell = (TDeskSelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
 
     if (cell == nil) {
         [self.collectionView layoutIfNeeded];
-        cell = (TUISelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+        cell = (TDeskSelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     }
     if (self.currentSelectCardItem == cell.cardItem) {
         self.currentSelectCardItem = nil;
@@ -2263,11 +2263,11 @@ static NSString *const reuseIdentifier = @"TUISelectAvatarCollectionCell";
     }
 
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-    TUISelectAvatarCollectionCell *cell = (TUISelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    TDeskSelectAvatarCollectionCell *cell = (TDeskSelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
 
     if (cell == nil) {
         [self.collectionView layoutIfNeeded];
-        cell = (TUISelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+        cell = (TDeskSelectAvatarCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     }
     [cell updateSelectedUI];
 }

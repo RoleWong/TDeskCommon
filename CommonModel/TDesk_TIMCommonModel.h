@@ -13,69 +13,69 @@
 NS_ASSUME_NONNULL_BEGIN
 ////////////////////////////////////////////////////////////////////////////////
 //
-//                           TUIPopView
+//                           TDeskPopView
 //
 /////////////////////////////////////////////////////////////////////////////////
-@class TUIPopView;
-@protocol TUIPopViewDelegate <NSObject>
-- (void)popView:(TUIPopView *)popView didSelectRowAtIndex:(NSInteger)index;
+@class TDeskPopView;
+@protocol TDeskPopViewDelegate <NSObject>
+- (void)popView:(TDeskPopView *)popView didSelectRowAtIndex:(NSInteger)index;
 @end
 
-@interface TUIPopView : UIView
+@interface TDeskPopView : UIView
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, assign) CGPoint arrowPoint;
-@property(nonatomic, weak) id<TUIPopViewDelegate> delegate;
+@property(nonatomic, weak) id<TDeskPopViewDelegate> delegate;
 - (void)setData:(NSMutableArray *)data;
 - (void)showInWindow:(UIWindow *)window;
 @end
 
-@interface TUIPopCellData : NSObject
+@interface TDeskPopCellData : NSObject
 @property(nonatomic, strong) UIImage *image;
 @property(nonatomic, strong) NSString *title;
 @end
 
-@interface TUIPopCell : UITableViewCell
+@interface TDeskPopCell : UITableViewCell
 @property(nonatomic, strong) UIImageView *image;
 @property(nonatomic, strong) UILabel *title;
 + (CGFloat)getHeight;
-- (void)setData:(TUIPopCellData *)data;
+- (void)setData:(TDeskPopCellData *)data;
 @end
 
 /////////////////////////////////////////////////////////////////////////////////
 //
-//                           TUIModifyView
+//                           TDeskModifyView
 //
 /////////////////////////////////////////////////////////////////////////////////
-@class TUIModifyView;
-@protocol TUIModifyViewDelegate <NSObject>
-- (void)modifyView:(TUIModifyView *)modifyView didModiyContent:(NSString *)content;
+@class TDeskModifyView;
+@protocol TDeskModifyViewDelegate <NSObject>
+- (void)modifyView:(TDeskModifyView *)modifyView didModiyContent:(NSString *)content;
 @end
 
-@interface TUIModifyViewData : NSObject
+@interface TDeskModifyViewData : NSObject
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, strong) NSString *content;
 @property(nonatomic, strong) NSString *desc;
 @property(nonatomic, assign) BOOL enableNull;
 @end
 
-@interface TUIModifyView : UIView
+@interface TDeskModifyView : UIView
 @property(nonatomic, strong) UIView *container;
 @property(nonatomic, strong) UILabel *title;
 @property(nonatomic, strong) UITextField *content;
 @property(nonatomic, strong) UILabel *descLabel;
 @property(nonatomic, strong) UIButton *confirm;
 @property(nonatomic, strong) UIView *hLine;
-@property(nonatomic, weak) id<TUIModifyViewDelegate> delegate;
-- (void)setData:(TUIModifyViewData *)data;
+@property(nonatomic, weak) id<TDeskModifyViewDelegate> delegate;
+- (void)setData:(TDeskModifyViewData *)data;
 - (void)showInWindow:(UIWindow *)window;
 @end
 
 /////////////////////////////////////////////////////////////////////////////////
 //
-//                           TUINaviBarIndicatorView
+//                           TDeskNaviBarIndicatorView
 //
 /////////////////////////////////////////////////////////////////////////////////
-@interface TUINaviBarIndicatorView : UIView
+@interface TDeskNaviBarIndicatorView : UIView
 
 @property(nonatomic, strong) UIActivityIndicatorView *indicator;
 
@@ -204,7 +204,7 @@ typedef enum : NSUInteger {
 //                             TDeskGroupPendencyCell & data
 //
 /////////////////////////////////////////////////////////////////////////////////
-#define TUIGroupPendencyCellData_onPendencyChanged @"TUIGroupPendencyCellData_onPendencyChanged"
+#define TDeskGroupPendencyCellData_onPendencyChanged @"TDeskGroupPendencyCellData_onPendencyChanged"
 
 @interface TDeskGroupPendencyCellData : TDeskCommonCellData
 
@@ -366,7 +366,7 @@ typedef enum : NSUInteger {
 
 @end
 
-@interface TUIEmojiTextAttachment : NSTextAttachment
+@interface TDeskEmojiTextAttachment : NSTextAttachment
 
 @property(nonatomic, strong) TDeskFaceCellData *faceCellData;
 

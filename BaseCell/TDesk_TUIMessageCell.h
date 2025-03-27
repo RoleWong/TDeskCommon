@@ -212,7 +212,7 @@
 - (void)notifyBottomContainerReadyOfData:(TDeskMessageCellData *)cellData;
 
 /// Callback of SelectCell
-@property(nonatomic, copy) TUIValueCallbck pluginMsgSelectCallback;
+@property(nonatomic, copy) TDeskValueCallbck pluginMsgSelectCallback;
 
 @end
 

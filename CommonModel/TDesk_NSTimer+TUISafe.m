@@ -9,11 +9,11 @@
 #import "TDesk_NSTimer+TUISafe.h"
 
 @implementation NSTimer (TUISafe)
-+ (NSTimer *)tui_scheduledTimerWithTimeInterval:(NSTimeInterval)interval repeats:(BOOL)repeats block:(void (^)(NSTimer *timer))block {
-    return [self scheduledTimerWithTimeInterval:interval target:self selector:@selector(tui_callBlock:) userInfo:[block copy] repeats:repeats];
++ (NSTimer *)tdesk_scheduledTimerWithTimeInterval:(NSTimeInterval)interval repeats:(BOOL)repeats block:(void (^)(NSTimer *timer))block {
+    return [self scheduledTimerWithTimeInterval:interval target:self selector:@selector(tdesk_callBlock:) userInfo:[block copy] repeats:repeats];
 }
 
-+ (void)tui_callBlock:(NSTimer *)timer {
++ (void)tdesk_callBlock:(NSTimer *)timer {
     void (^block)(NSTimer *timer) = timer.userInfo;
     !block ?: block(timer);
 }
