@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'TDeskCommon'
-  spec.version      = '2.9.012'
+  spec.version      = '2.9.013'
   spec.platform     = :ios
   spec.ios.deployment_target = '9.0'
   spec.license      = { :type => 'Proprietary',
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   
 #  spec.vendored_frameworks = 'ReactiveObjCForTDesk.framework'
   
-  spec.dependency 'TDeskCore', '~> 2.9.012'
+  spec.dependency 'TDeskCore', '~> 2.9.013'
   spec.dependency 'SDWebImage'
   spec.dependency 'ReactiveObjCForTDesk', '~> 5.0.3'
   spec.dependency 'MasonryForTDesk'
