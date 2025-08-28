@@ -726,6 +726,7 @@
 "TUICustomerView" = "View";
 "TUICustomerHumanService" = "Human Service";
 "TUICustomerHeader" = "Hi, I'm %@";
+"TUIAILabel" = "AI-Generated Content";
 
 
 

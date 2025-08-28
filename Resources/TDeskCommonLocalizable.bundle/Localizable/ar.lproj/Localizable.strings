@@ -718,6 +718,7 @@
 "TUICustomerView" = "عرض المحتوى";
 "TUICustomerHumanService" = "خدمة العملاء";
 "TUICustomerHeader" = "مرحبًا، أنا %@";
+"TUIAILabel" = "AI-Generated Content";
 
 
 
