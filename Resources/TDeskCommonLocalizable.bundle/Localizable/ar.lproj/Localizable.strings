@@ -717,7 +717,10 @@
 "TUICustomerNotEditable" = "غير قابل للتعديل";
 "TUICustomerView" = "عرض المحتوى";
 "TUICustomerHumanService" = "خدمة العملاء";
+"TUICustomerEndService" = "إنهاء المحادثة";
+"TUICustomerServiceRating" = "تقييم الخدمة";
 "TUICustomerHeader" = "مرحبًا، أنا %@";
+"TUIAILabel" = "AI-Generated Content";
 
 
 

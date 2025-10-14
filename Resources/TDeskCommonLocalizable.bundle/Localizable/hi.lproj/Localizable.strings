@@ -1,0 +1,809 @@
+/* 
+  Localizable.strings
+  English
+  
+  Created by harvy on 2020/10/9.
+  
+*/
+/***************************** 日期格式化 Start *************************/
+"YesterdayDateFormat" = "HH:mma";       // 英文是 HH:mma 不要动
+/***************************** 日期格式化 End ***************************/
+
+"TUIKitTipsMostSelectTextFormat" = "अधिकतम %ld चुनें";
+
+"Confirm" = "ठीक";
+"Cancel" = "रद्द करें";
+"Send" = "भेजें";
+"Save" = "सेव करें";
+"You" = "आप";
+"you" = "तुम";
+"Male" = "पुरुष";
+"Female" = "महिला";
+"File" = "फ़ाइलें";
+"Download" = "डाउनलोड";
+"Unsetted" = "सेट नहीं";
+"Show" = "दिखाएं";
+
+"Monday" = "सोम";
+"Tuesday" = "मंगल";
+"Wednesday" = "बुध";
+"Thursday" = "गुरु";
+"Friday" = "शुक्र";
+"Saturday" = "शनि";
+"Sunday" = "रवि";
+"Yesterday" = "कल";
+"am" = "AM";
+"pm" = "PM";
+
+"Read" = "पढ़ा हुआ";
+"Unread" = "अनपढ़ा";
+
+"Copy" = "कॉपी";
+"Delete" = "हटाएं";
+"Revoke" = "वापस लें";
+"Retry" = "पुनः प्रयास";
+"Re_send" = "फिर से भेजें";
+"Make_a_call" = "कॉल शुरू करें";
+"Done" = "ठीक";
+"All" = "सभी";
+"Agreed" = "स्वीकृत";
+"Disclined" = "अस्वीकृत";
+"Agree" = "स्वीकार करें";
+"Have_been_sent" = "भेज दिया गया";
+
+"OK" = "ठीक";
+"None" = "कोई नहीं";
+"Send" = "भेजें";
+"Cancel" = "रद्द करें";
+"Alia" = "टिप्पणी";
+"Group" = "सूची";
+"Accept" = "स्वीकार करें";
+"Decline" = "अस्वीकार करें";
+"send_success" = "भेज दिया गया";
+"add_success" = "जोड़ा गया";
+"delete_success" = "हटा दिया गया";
+"my_friend" = "मेरे दोस्त";
+"no_personal_signature" = "कोई स्थिति नहीं";
+"SignatureFormat" = "स्थिति:%@";
+"choose_avatar_for_you" = "ऐप आपको एक सिस्टम अवतार सौंपता है।";
+"SearchGroupPlaceholder" = "उपयोगकर्ता ID";
+"please_fill_in_verification_information" = "सत्यापन जानकारी दर्ज करें";
+"please_fill_in_remarks_group_info" = "टिप्पणी और सूची नाम दर्ज करें";
+
+"no_set" = "सेट नहीं";
+"no_personal_signature" = "कोई स्थिति नहीं";
+"logout" = "लॉग आउट";
+"login" = "लॉग इन";
+"ReadAll" = "सभी पढ़ें";
+"Hide" = "छिपाएं";
+"Delete" = "हटाएं";
+
+"ChatsNewChatText" = "नई चैट";
+"ChatsNewGroupText" = "ग्रुप बनाएं";
+"ChatsSelectContact" = "संपर्क चुनें";
+
+"ContactsJoinGroup" = "ग्रुप जोड़ें";
+"ContactsAddFriends" = "संपर्कों में जोड़ें";
+
+"GroupJoin" = "ग्रुप जोड़ें";
+"GroupRequestJoinGroupFormat" = "%@ ग्रुप चैट में शामिल होने का अनुरोध करता है।";
+"GroupDeleteFriend" = "संपर्क हटाएं";
+"GroupAddFirend" = "संपर्क जोड़ें";
+"GroupMember" = "ग्रुप सदस्य";
+
+"ProfileAlia" = "उपनाम";
+"ProfileMessageDoNotDisturb" = "सूचनाएं म्यूट करें";
+"ProfileStickyonTop" = "पिन करें";
+"ProfileBlocked" = "ब्लॉक";
+"ProfileSendMessages" = "संदेश भेजें";
+"ProfileDeleteFirend" = "दोस्त हटाएं";
+"ProfileEditAlia" = "उपनाम";
+"ProfileDetails" = "विवरण";
+"ProfileSetBackgroundImage" = "पृष्ठभूमि";
+"ProfilePhoto" = "प्रोफ़ाइल फोटो";
+"ProfileName" = "नाम";
+"ProfileAccount" = "खाता";
+"ProfileSignature" = "स्थिति";
+"ProfileGender" = "लिंग";
+"ProfileEditName" = "नाम";
+"ProfileEditNameDesc" = "केवल चीनी अक्षर, अक्षर, संख्याएं और अंडरस्कोर अनुमत हैं";
+"ProfileEditSignture" = "स्थिति";
+"ProfileEditGender" = "लिंग";
+"ProfileEditAlia" = "उपनाम";
+"ProfileEdit" = "संपादित करें";
+"ProfileAlia" = "उपनाम";
+"ProfileBlocked" = "ब्लॉक";
+"ProfileMessageDoNotDisturb" = "सूचनाएं म्यूट करें";
+"ProfileStickyonTop" = "पिन करें";
+"ProfileSendMessages" = "संदेश भेजें";
+"ProfileDeleteFirend" = "दोस्त हटाएं";
+"ProfileBirthday" = "जन्मदिन";
+"SignatureFormat" = "स्थिति:%@";
+
+"FriendRequestFormat" = "मैं %@ हूं";
+"FriendRequestFillInfo" = "दोस्त जोड़ें";
+"FriendOneWay" = "एक-तरफा दोस्त";
+"FriendAddTitle" = "दोस्त जोड़ें";
+"FriendAddVerificationMessage" = "सत्यापन संदेश";
+"FriendAddResultSuccessWait" = "सफलतापूर्वक भेजा गया। अनुमोदन की प्रतीक्षा करें।";
+"FriendAddResultForbid" = "दूसरे उपयोगकर्ता ने दोस्त अनुरोध अक्षम कर दिया है।";
+"FriendAddResultSuccess" = "दोस्त सूची में जोड़ा गया";
+"FriendAddResultExists" = "आप पहले से ही दोस्त हैं।";
+"MeFriendRequest" = "दोस्त अनुरोध";
+"MeFriendRequestMethodAgreeAll" = "किसी भी उपयोगकर्ता को आपको दोस्त के रूप में जोड़ने की अनुमति दें";
+"MeFriendRequestMethodNeedConfirm" = "अनुरोध पर कोई भी";
+"MeFriendRequestMethodDenyAll" = "किसी भी उपयोगकर्ता से दोस्त अनुरोध अस्वीकार करें";
+"MeMessageReadStatus" = "संदेश पढ़ने की स्थिति";
+"MeMessageReadStatusOpenDesc" = "यदि अक्षम है, तो आपके सभी संदेशों और चैट में सदस्यों द्वारा भेजे गए सभी संदेशों के लिए संदेश पढ़ने की स्थिति छिपी हुई है।";
+"MeMessageReadStatusCloseDesc" = "यदि सक्षम है, तो आपके सभी संदेशों और चैट में सदस्यों द्वारा भेजे गए सभी संदेशों के लिए संदेश पढ़ने की स्थिति प्रदर्शित की जाती है।";
+
+"ShowOnlineStatus" = "ऑनलाइन स्थिति प्रदर्शित करें";
+"ShowOnlineStatusOpenDesc" = "यदि अक्षम है, तो उपयोगकर्ताओं की ऑनलाइन स्थिति आपके सत्र और संपर्क सूची में प्रदर्शित नहीं होगी।";
+"ShowOnlineStatusCloseDesc" = "यदि सक्षम है, तो उपयोगकर्ताओं की ऑनलाइन स्थिति आपके सत्र और संपर्क सूची में प्रदर्शित होगी।";
+"ShowPackageToast" = "यह अल्टीमेट संस्करण की सुविधा है";
+
+"ShowCallsRecord" = "कॉल रिकॉर्ड प्रदर्शित करें";
+
+"TUIKitClassic" = "क्लासिक";
+"TUIKitMinimalist" = "मिनिमलिस्ट";
+"TUIKitThemeNameSystemFollowTitle" = "स्वचालित";
+"TUIKitThemeNameSystemFollowSubTitle" = "इस फ़ंक्शन के सक्षम होने के बाद, केवल डिफ़ॉल्ट स्किन (लाइट/डार्क) प्रदर्शित की जाएगी। अन्य स्किन शैलियों को स्विच नहीं किया जा सकता है";
+"TUIKitThemeNameSerious" = "गंभीर";
+"TUIKitThemeNameLight" = "लाइट";
+"TUIKitThemeNameLivey" = "जीवंत";
+"TUIKitThemeNameDark" = "डार्क";
+"TUIKitThemeNameSystem" = "सिस्टम";
+
+"TUIKitDone" = "पूर्ण";
+"TUIKitWelcome" = "Tencent Cloud इंस्टेंट मैसेजिंग में आपका स्वागत है!";
+"TUIKitMicCamerAuthTips" = "माइक और कैमरा अनुमतियां सक्षम करें";
+"TUIKitMicAuth" = "माइक अनुमति सक्षम करें";
+"TUIKitTipsConfirmResendMessage" = "क्या यह संदेश पुनः भेजना है? ";
+"TUIKitTipsSystemError" = "सिस्टम त्रुटि";
+"TUIKitTipsEnterRoomErrorFormat" = "कमरे में प्रवेश करने में विफल: %d";
+"TUIKitWhoRequestForJoinGroupFormat" = "%@ ग्रुप चैट में शामिल होने का अनुरोध करता है।";
+"TUIKitInviteJoinGroupFormat" = "%@ को ग्रुप चैट में आमंत्रित करें।";
+"TUIKitAgreedByAdministor" = "अनुरोध व्यवस्थापक द्वारा अनुमोदित";
+"TUIkitDiscliedByAdministor" = "व्यवस्थापक ने अनुरोध अस्वीकार कर दिया।";
+"TUIKitDownloadProgressFormat" = "डाउनलोड हो रहा है %d%%";
+"TUIKitOpenWithOtherApp" = "दूसरे ऐप के साथ खोलें";
+"TUIKitTipsContactListNil" = "संपर्क सूची खाली है। पहले दोस्त जोड़ें।";
+
+"TUIKitInputHoldToTalk" = "बात करने के लिए दबाए रखें";
+"TUIKitInputReleaseToSend" = "भेजने के लिए छोड़ें";
+"TUIKitInputReleaseToCancel" = "रद्द करने के लिए छोड़ें";
+
+"TUIKitInputBlankMessageTitle" = "खाली संदेश भेजने में असमर्थ";
+"TUIKitInputWillFinishRecordInSeconds" = "रिकॉर्डिंग %ld सेकंड में समाप्त हो जाएगी।";
+"TUIKitInputRecordSlideToCancel" = "रद्द करने के लिए ऊपर स्लाइड करें";
+"TUIKitInputRecordReleaseToCancel" = "रद्द करने के लिए छोड़ें";
+"TUIKitInputRecordTimeshort" = "संदेश बहुत छोटा";
+"TUIKitInputRecordTimeLong" = "संदेश बहुत लंबा";
+
+"TUIKitGroupProfileDetails" = "विवरण";
+"TUIKitGroupProfileMember" = "ग्रुप सदस्य";
+"TUIKitGroupProfileMemberCount" = "%d सदस्य";
+"TUIKitGroupProfileMemberCountlu" = "%lu सदस्य";
+"TUIKitGroupProfileType" = "ग्रुप प्रकार";
+"TUIKitGroupProfileJoinType" = "ग्रुप जुड़ने की विधि";
+"TUIKitGroupProfileInviteType" = "ग्रुप आमंत्रण विधि";
+"TUIKitGroupProfileInviteJoin" = "आमंत्रित करें";
+"TUIKitGroupProfileAutoApproval" = "स्वत: अनुमोदन";
+"TUIKitGroupProfileAlias" = "ग्रुप में मेरा उपनाम";
+"TUIKitGroupProfileMessageDoNotDisturb" = "सूचनाएं म्यूट करें";
+"TUIKitGroupProfileStickyOnTop" = "पिन करें";
+"TUIKitGroupProfileDeleteAndExit" = "हटाएं और छोड़ें";
+"TUIKitGroupProfileDissolve" = "ग्रुप भंग करें";
+"TUIKitGroupProfileReport" = "रिपोर्ट";
+"TUIKitGroupProfileJoinDisable" = "जुड़ने से प्रतिबंधित";
+"TUIKitGroupProfileInviteDisable" = "आमंत्रित करने से प्रतिबंधित";
+"TUIKitGroupProfileAdminApprove" = "व्यवस्थापक अनुमोदन";
+"TUIKitGroupProfileEditAlias" = "ग्रुप में मेरा उपनाम संपादित करें";
+"TUIKitGroupProfileEditAliasDesc" = "केवल अक्षर, अंक, अंडरस्कोर और चीनी अक्षर।";
+"TUIKitGroupProfileEditGroupName" = "ग्रुप नाम संपादित करें";
+"TUIKitGroupProfileEditAnnouncement" = "ग्रुप सूचना संपादित करें";
+"TUIKitGroupProfileEditAvatar" = "ग्रुप प्रोफ़ाइल फोटो बदलें";
+"TUIKitGroupProfileDeleteGroupTips" = "छोड़ने के बाद, आपको इस ग्रुप चैट से संदेश प्राप्त नहीं होंगे।";
+"TUIKitGroupProfileGroupCountFormat" = "ग्रुप सदस्य (कुल %ld)";
+"TUIKitGroupProfileManage" = "प्रबंधित करें";
+"TUIKitGroupProfileManageAdd" = "सदस्य जोड़ें";
+"TUIKitGroupProfileManageDelete" = "सदस्य हटाएं";
+"TUIKitGroupProfileAdmainAdd" = "व्यवस्थापक सेट करें";
+"TUIKitGroupProfileAdmainDelete" = "व्यवस्थापक हटाएं";
+"TUIKitGroupTransferOwner" = "ग्रुप स्थानांतरित करें";
+"TUIKitGroupTransferOwnerSuccess" = "सफल स्थानांतरण";
+
+"TUIKitGroupApplicant" = "ग्रुप में शामिल होने का अनुरोध";
+"TUIKitGroupDismssTipsFormat" = "ग्रुप %@ भंग कर दिया गया";
+"TUIKitGroupRecycledTipsFormat" = "%@ ग्रुप पुनः प्राप्त कर लिया गया है।";
+"TUIKitGroupKickOffTipsFormat" = "आपको ग्रुप %@ से हटा दिया गया था।";
+"TUIKitGroupDropoutTipsFormat" = "आपने ग्रुप %@ छोड़ दिया है।";
+"TUIKitGroupMessagePinRemove" = "हटाएं";
+
+"TUIKitMessageTipsNormalRecallMessage" = "एक संदेश वापस लिया गया";
+"TUIKitMessageTipsYouRecallMessage" = "आपने एक संदेश वापस लिया।";
+"TUIKitMessageTipsReEditMessage" = "पुनः संपादित करें";
+"TUIKitMessageTipsRecallMessageFormat" = "\"%@\" ने एक संदेश वापस लिया।";
+"TUIKitMessageTipsOthersRecallMessage" = "दूसरे उपयोगकर्ता ने संदेश वापस लिया।";
+"TUIKitMessageTipsJoinGroupFormat" = "\"%@\" ग्रुप में शामिल हो गया।";
+"TUIKitMessageTipsInviteJoinGroupFormat" = "\"%@\" ने \"%@\" को ग्रुप में आमंत्रित किया।";
+"TUIKitMessageTipsLeaveGroupFormat" = "\"%@\" ग्रुप चैट छोड़ गया।";
+"TUIKitMessageTipsKickoffGroupFormat" = "\"%@\" ने \"%@\" को ग्रुप से हटा दिया।";
+"TUIKitMessageTipsSettAdminFormat" = "\"%@\" को व्यवस्थापक के रूप में सेट किया गया।";
+"TUIKitMessageTipsCancelAdminFormat" = "\"%@\" की व्यवस्थापक स्थिति समाप्त कर दी गई।";
+"TUIkitMessageTipsEditGroupNameFormat" = "%@ ने ग्रुप नाम \"%@\" में बदल दिया,";
+"TUIKitMessageTipsEditGroupIntroFormat" = "%@ ने ग्रुप विवरण \"%@\" में बदल दिया।";
+"TUIKitMessageTipsEditGroupAnnounceFormat" = "%@ ने ग्रुप सूचना \"%@\" में बदल दी।";
+"TUIKitMessageTipsDeleteGroupAnnounceFormat" = "%@ ने ग्रुप सूचना हटा दी।";
+"TUIKitMessageTipsEditGroupAvatarFormat" = "%@ ने ग्रुप प्रोफ़ाइल फोटो बदल दी।";
+"TUIKitMessageTipsEditGroupOwnerFormat" = "%@ ने ग्रुप मालिक \"%@\" में बदल दिया।";
+"TUIKitMessageTipsCreateGroupFormat" = "\"%@\" ने एक ग्रुप बनाया।";
+"TUIKitMessageTipsUnsupportCustomMessage" = "[कस्टम संदेश]";
+"TUIKitMessageTipsMute" = "पोस्ट करने से अवरुद्ध है";
+"TUIKitMessageTipsUnmute" = "अवरोध हटा दिया गया";
+"TUIKitMessageTipsRecallRiskContent" = "उल्लंघन संदेश वापस ले लिया गया";
+"TUIKitMessageDisplayRiskContent" = "[उल्लंघन संदेश]";
+"TUIKitMessageTipsGroupPinMessage" = "\"%@\" ने एक संदेश पिन किया";
+"TUIKitMessageTipsGroupUnPinMessage" = "\"%@\" ने एक संदेश अनपिन किया";
+
+"TUIKitSignalingFinishGroupChat" = "ग्रुप चैट समाप्त करें";
+"TUIKitSignalingFinishConversationAndTimeFormat" = "अवधि";
+"TUIKitSignalingNewCall" = "कॉल शुरू करें";
+"TUIKitSignalingNewGroupCallFormat" = "\"%@\" ने एक ग्रुप कॉल शुरू की।";
+"TUIkitSignalingCancelCall" = "कॉल रद्द करें";
+"TUIkitSignalingCancelGroupCallFormat" = "\"%@\" ने ग्रुप कॉल रद्द कर दी।";
+"TUIkitSignalingHangonCall" = "उत्तर दिया";
+"TUIKitSignalingHangonCallFormat" = "\"%@\" ने उत्तर दिया।";
+"TUIKitSignalingBusyFormat" = "\"%@\" व्यस्त है।";
+"TUIKitSignalingDeclineFormat" = "\"%@\" ने कॉल अस्वीकार कर दी।";
+"TUIKitSignalingCallBusy" = "लाइन व्यस्त";
+"TUIkitSignalingDecline" = "कॉल अस्वीकार करें";
+"TUIKitSignalingNoResponse" = "कोई उत्तर नहीं";
+"TUIkitSignalingUnrecognlize" = "अपरिचित कॉल निर्देश";
+
+"TUIKitUserStatusUnknown" = "अज्ञात";
+"TUIKitUserStatusOnline" = "ऑनलाइन";
+"TUIKitUserStatusOffline" = "ऑफलाइन";
+"TUIKitUserStatusUnlogined" = "लॉगिन नहीं";
+
+"TUIkitMessageTypeImage" = "[छवि]";
+"TUIKitMessageTypeVoice" = "[आवाज]";
+"TUIkitMessageTypeVideo" = "[वीडियो]";
+"TUIkitMessageTypeFile" = "[फ़ाइल]";
+"TUIKitMessageTypeAnimateEmoji" = "[एनिमेटेड स्टिकर]";
+"TUIKitMessageTypeDraftFormat" = "[ड्राफ्ट]";
+
+"TUIkitMessageTypeRiskImage" = "[अवैध चित्र]";
+"TUIkitMessageTypeRiskVoice" = "[अवैध आवाज]";
+"TUIkitMessageTypeRiskVideo" = "[अवैध वीडियो]";
+
+"TUIKitMessageTypeLastMsgCountFormat" = "संदेश";
+"TUIKitMessageTypeSecurityStrike" = "संवेदनशील सामग्री शामिल, भेजने में विफल";
+"TUIKitMessageTypeSecurityStrikeVoice" = "संवेदनशील सामग्री शामिल, सुनने में असमर्थ";
+"TUIKitMessageTypeSecurityStrikeImage" = "संवेदनशील सामग्री शामिल और देखने में असमर्थ";
+"TUIKitMessageTypeSecurityStrikeTranslate" = "संवेदनशील सामग्री शामिल, अनुवाद विफल";
+
+"TUIKitMessageTypeOtherUseMic" = "माइक्रोफोन किसी अन्य फ़ंक्शन द्वारा उपयोग किया जा रहा है, रिकॉर्ड करने में असमर्थ।";
+
+"TUIKitMessageReadPartRead" = "पढ़ा हुआ";
+"TUIKitMessageReadPartUnread" = "अनपढ़ा";
+"TUIKitMessageReadPartDisable" = "पढ़ना अक्षम करें";
+"TUIKitMessageReadAllRead" = "सभी पढ़े गए";
+"TUIKitMessageReadC2CRead" = "पढ़ा हुआ";
+"TUIKitMessageReadC2CUnRead" = "अनपढ़ा";
+"TUIKitMessageReadC2CUnReadDetail" = "अनपढ़ा";
+"TUIKitMessageReadDetail" = "संदेश विवरण";
+"TUIKitMessageReadNoMoreData" = "कोई और डेटा नहीं है";
+"TUIKitMessageReadGetReadMembersFail" = "पढ़े गए सदस्य प्राप्त करने में विफल।";
+"TUIKitMessageReadGetUnreadMembersFail" = "अनपढ़े सदस्य प्राप्त करने में विफल।";
+
+"TUIKitMoreCamera" = "फोटो लें";
+"TUIKitMorePhoto" = "एल्बम";
+"TUIKitMoreVideo" = "वीडियो रिकॉर्ड करें";
+"TUIKitMoreVideoCaptureDurationTip" = "रिकॉर्ड समय बहुत कम है";
+"TUIKitMoreFile" = "फ़ाइल";
+"TUIKitMoreVideoCall" = "वीडियो कॉल";
+"TUIKitMoreVoiceCall" = "वॉइस कॉल";
+"TUIKitMoreLink" = "कस्टम";
+"TUIKitMoreLinkDetails" = "विवरण देखें>>";
+"TUIKitMorePoll" = "पोल";
+"TUIKitMoreGroupNote" = "ग्रुप नोट";
+"TUIKitMoreEvaluation" = "सेवा मूल्यांकन";
+"TUIKitMoreCard" = "कार्ड संदेश";
+
+"TUIKitFileSizeCheckLimited" = "फ़ाइल आकार सीमा से अधिक";
+"TUIKitImageSizeCheckLimited" = "छवि आकार सीमा से अधिक";
+
+"TUIKitCallInviteYouVideoCall" = "आपको एक वीडियो कॉल के लिए आमंत्रित किया।";
+"TUIKitCallTurningOnMute" = "म्यूट चालू";
+"TUIKitCallTurningOffMute" = "म्यूट बंद";
+"TUIKitCallUsingSpeaker" = "स्पीकर चालू करें";
+"TUIKitCallUsingHeadphone" = "स्पीकर बंद करें";
+"TUIKitCallCancelCallingFormat" = "%@ ने कॉल रद्द कर दी।";
+
+"TUIKitAtSelectMemberTitle" = "ग्रुप सदस्य चुनें";
+
+"TUIKitConversationTipsAtMe" = "[आपको उल्लेख किया गया था]";
+"TUIKitConversationTipsAtAll" = "[@सभी]";
+"TUIKitConversationTipsAtMeAndAll" = "[मैं उल्लेख किया गया था][@सभी]";
+"TUIKitConversationTipsDelete" = "यह वार्तालाप और इतिहास संदेश सभी हटा दिए जाएंगे";
+
+"TUIKitPublicGroup" = "सार्वजनिक ग्रुप";
+"TUIKitWorkGroup" = "चर्चा ग्रुप";
+"TUIKitChatRoom" = "चैटरूम";
+"TUIKitCommunity" = "कम्युनिटी";
+
+"TUIKitContactsNewFriends" = "नए संपर्क";
+"TUIKitContactsGroupChats" = "ग्रुप चैट";
+"TUIKitContactsBlackList" = "ब्लॉक सूची";
+"TUIKitAddFriendSourceFormat" = "स्रोत: %@";
+"TUIKitFriendApplicationApproved" = "दोस्त अनुरोध स्वीकृत";
+"TUIKitFirendRequestRejected" = "दोस्त अनुरोध अस्वीकृत";
+
+"TUIKitOfflinePushCallTips" = "आपके पास एक कॉल अनुरोध है।";
+
+"TUIKitChatTap2Remove" = "हटाने के लिए टैप करें";
+"TUIKitChatPendencyTitle" = "प्रक्रिया करने के लिए टैप करें";
+"TUIKitChatPendencyRequestToJoinGroupFormat" = "%@ ग्रुप जुड़ने का अनुरोध";
+"TUIKitChatTipsAtMe" = "आपको उल्लेख किया गया था";
+"TUIKitChatBackToLatestLocation" = "नवीनतम स्थान पर वापस जाएं";
+"TUIKitChatNewMessages" = "%@ नए संदेश";
+
+"TUIKitAllowTypeAcceptOne" = "किसी भी उपयोगकर्ता को आपको दोस्त के रूप में जोड़ने की अनुमति दें";
+"TUIKitAllowTypeNeedConfirm" = "अनुरोध पर कोई भी";
+"TUIKitAllowTypeDeclineAll" = "किसी भी उपयोगकर्ता से दोस्त अनुरोध अस्वीकार करें";
+
+/***************************** 消息转发 & 消息搜索 *************************/
+"Multiple" = "एकाधिक";
+"Forward" = "अग्रेषित करें";
+"Delete" = "हटाएं";
+"Copy" = "कॉपी";
+"Revoke" = "वापस लें";
+"Resend" = "पुनः भेजें";
+"Search" = "खोज";
+"Recall" = "वापस लें";
+"MultiSelect" = "चुनें";
+"Quote" = "उद्धरण";
+
+"TUIKitCallMicCamAuthTips" = "अपने माइक्रोफोन और कैमरा तक पहुंच की अनुमति दें";
+"TUIKitCallMicAuthTips" = "अपने माइक्रोफोन तक पहुंच की अनुमति दें";
+"TUIKitMessageTipsSureToResend" = "क्या आप वाकई संदेश पुनः भेजना चाहते हैं?";
+
+"TUIKitRelayNoMessageTips" = "संदेश चुनें";
+"TUIKitRelayRecentMessages" = "हाल की चैट";
+"TUIKitRelayChatHistory" = "चैट इतिहास";
+"TUIKitRelaySepcialForbid" = "कुछ चयनित संदेश अग्रेषित नहीं किए जा सकते (जैसे, आवाज संदेश)।";
+"TUIKitRelayConfirmForward" = "क्या आप वाकई संदेश अग्रेषित करना चाहते हैं?";
+"TUIKitRelayOneByOneForward" = "एक-एक करके अग्रेषित करें";
+"TUIKitRelayCombineForwad" = "संयोजित करें और अग्रेषित करें";
+"TUIKitRelayGroupChatHistory" = "ग्रुप चैट इतिहास";
+"TUIKitRelayChatHistoryForSomebodyFormat" = "%@ और %@ का चैट इतिहास";
+"TUIKitRelayErrorForwardFormat" = "अग्रेषित करने में विफल: कोड:%d, विवरण:%@";
+"TUIKitRelayTargetCreateNewChat" = "नई चैट";
+"TUIKitRelayTargetCreateNewGroup" = "नया ग्रुप";
+"TUIKitRelayTargetSelectFromContacts" = "संपर्कों से चुनें";
+"TUIKitRelayTargetCrateGroupError" = "ग्रुप बनाने में विफल।";
+"TUIKitRelayTargetNoneTips" = "एक संपर्क या वार्तालाप चुनें";
+"TUIKitRelayLayerLimitTips" = "वर्तमान नेस्टिंग स्तर सीमा से अधिक है।";
+"TUIKitRelayCompatibleText" = "संयोजित करें और अग्रेषित करें उपलब्ध नहीं है। पहले नवीनतम संस्करण में अपग्रेड करें।";
+"TUIKitRelayUnsupportForward" = "विफल संदेश अग्रेषित करने में असमर्थ।";
+"TUIKitRelayOneByOnyOverLimit" = "बहुत सारे संदेशों के कारण संदेशों को एक-एक करके अग्रेषित करने में असमर्थ।";
+"TUIKitRelayPluginNotAllowed" = "ग्रुप नोट या पोल संदेश अग्रेषित करने में असमर्थ।";
+
+"TUIKitSearchItemHeaderTitleContact" = "संपर्क";
+"TUIKitSearchItemFooterTitleContact" = "अधिक";
+"TUIKitSearchItemHeaderTitleGroup" = "ग्रुप चैट";
+"TUIKitSearchItemFooterTitleGroup" = "अधिक";
+"TUIkitSearchItemHeaderTitleChatHistory" = "चैट इतिहास";
+"TUIKitSearchItemFooterTitleChatHistory" = "अधिक";
+"TUIKitSearchResultMatchFormat" = "शामिल: %@";
+"TUIKitSearchResultMatchGroupIDFormat" = "ग्रुप ID शामिल: %@";
+"TUIKitSearchResultMatchGroupMember" = "ग्रुप सदस्य शामिल:";
+"TUIKitSearchResultDisplayChatHistoryCountFormat" = "%zd संदेश";
+/***************************** 消息转发 & 消息搜索 *************************/
+
+
+/***************************** 消息回复 & 换肤 *************************/
+"Reply" = "उत्तर";
+"TUIKitReplyMessageNotFoundOriginMessage" = "मूल संदेश का पता लगाने में असमर्थ।";
+"TUIKitClearAllChatHistory" = "चैट इतिहास साफ़ करें";
+"TUIKitClearAllChatHistoryTips" = "क्या आप वाकई चैट इतिहास साफ़ करना चाहते हैं?";
+"Discline" = "अस्वीकार";
+"Copied" = "कॉपी किया गया";
+"ConfirmDeleteMessage" = "अभी हटाएं";
+"TUIKitAddFriend" = "संपर्क जोड़ें";
+"TUIKitAddGroup" = "ग्रुप जोड़ें";
+"TUIKitSearchUserID" = "उपयोगकर्ता ID से खोजें";
+"TUIKitSearchGroupID" = "ग्रुप ID से खोजें";
+"TUIKitNoSelfSignature" = "कोई स्थिति नहीं";
+"TUIKitSelfSignatureFormat" = "स्थिति: %@";
+"TUIKitGroupProfileManage" = "प्रबंधित करें";
+"TUIKitGroupManageShutupAllTips" = "जब म्यूट ऑल सक्षम होता है, तो केवल ग्रुप मालिक और व्यवस्थापकों को संदेश भेजने की अनुमति होती है।";
+"TUIKitGroupManageAdminSetting" = "व्यवस्थापक के रूप में सेट करें";
+"TUIKitGroupManageShutAll" = "सभी को म्यूट करें";
+"TUIKitGroupAddShutupMember" = "म्यूट करने के लिए सदस्य जोड़ें";
+"TUIKitGroupShutupOption" = "म्यूट";
+"TUIKitGroupDisShutupOption" = "अनम्यूट";
+"TUIKitGroupOwner" = "ग्रुप मालिक";
+"TUIKitGroupManagerFormat" = "व्यवस्थापक (%zd/%zd)";
+"TUIKitSetShutupAllFormat" = "%@ ने म्यूट ऑल सक्षम किया";
+"TUIKitCancelShutupAllFormat" = "%@ ने म्यूट ऑल अक्षम किया";
+"TUIKitGroupNotice" = "ग्रुप सूचना";
+"TUIKitGroupNoticeNull" = "कोई ग्रुप सूचना नहीं";
+"Edit" = "संपादित करें";
+"Done" = "ठीक";
+"TUIKitAddContactMyUserIDFormat" = "मेरा उपयोगकर्ता ID: %@";
+"TUIKitAddUserNoDataTips" = "यह उपयोगकर्ता मौजूद नहीं है।";
+"TUIKitAddGroupNoDataTips" = "यह ग्रुप चैट मौजूद नहीं है।";
+/***************************** 消息回复 & 换肤 *************************/
+
+
+/***************************** 视频、图片加载 & 保存 *************************/
+"TUIKitVideoTranscoding" = "वीडियो ट्रांसकोडिंग...";
+"TUIKitVideoDownloading" = "वीडियो डाउनलोड हो रहा है...";
+"TUIKitVideoSavedSuccess" = "वीडियो सफलतापूर्वक सहेजा गया।";
+"TUIKitVideoSavedFailed" = "वीडियो सहेजने में विफल।";
+"TUIKitPictureSavedSuccess" = "छवि सफलतापूर्वक सहेजी गई।";
+"TUIKitPictureSavedFailed" = "छवि सहेजने में विफल।";
+"TUIKitPictureCheckRisk" = "यह पता चला है कि छवि में संवेदनशील सामग्री शामिल है और अस्थायी रूप से देखी नहीं जा सकती।";
+"TUIKitVideoCheckRisk" = "यह पता चला है कि वीडियो में संवेदनशील सामग्री शामिल है और अस्थायी रूप से देखी नहीं जा सकती।";
+"TUIKitVideoCheckRiskCancel" = "ठीक";
+/***************************** 视频、图片加载 & 保存 *************************/
+
+"TUIKitGroupSetAdminsForbidden" = "इस प्रकार की ग्रुप चैट के लिए व्यवस्थापक सेट करने में असमर्थ।";
+"TUIKitGroupAddAdmins" = "व्यवस्थापक जोड़ें";
+"TUIKitGroupAddMemberOfBlockedForbidden" = "इस प्रकार की ग्रुप चैट के लिए निर्दिष्ट सदस्यों को म्यूट करने में असमर्थ।";
+
+"TUIKitNotDownload"= "डाउनलोड नहीं";
+"TUIKitInputNoCameraTitle" = "कैमरा तक पहुंच नहीं";
+"TUIKitInputNoCameraTips"  = "फोटो लेने, वीडियो रिकॉर्ड करने, या वीडियो कॉल करने में असमर्थ। अभी अधिकृत करें पर क्लिक करके अपने कैमरा तक पहुंच की अनुमति दें।";
+"TUIKitInputNoCameraOperateLater" = "बाद में";
+"TUIKitInputNoCameraOperateEnable" = "अभी अधिकृत करें";
+
+"TUIKitInputNoMicTitle" = "माइक्रोफोन तक पहुंच नहीं";
+"TUIKitInputNoMicTips"  = "आवाज संदेश भेजने, वीडियो रिकॉर्ड करने, या वॉइस और वीडियो कॉल करने में असमर्थ। अभी अधिकृत करें पर क्लिक करके अपने माइक्रोफोन तक पहुंच की अनुमति दें।";
+"TUIKitInputNoMicOperateLater" = "बाद में";
+"TUIKitInputNoMicOperateEnable" = "अभी अधिकृत करें";
+
+"TUIKitInputNoPhotoTitle" = "छवियों तक पहुंच नहीं";
+"TUIKitInputNoPhotoTips"  = "चैट में छवियों को देखने या चुनने में असमर्थ। अभी अधिकृत करें पर क्लिक करके अपनी छवियों तक पहुंच की अनुमति दें।";
+"TUIKitInputNoPhotoOperateLater" = "बाद में";
+"TUIKitInputNoPhotoerateEnable" = "अभी अधिकृत करें";
+
+"TUIKitInputRecordTipsTitle" = "रद्द करने के लिए बाएं स्वाइप करें या भेजने के लिए छोड़ें";
+"TUIKitInputRecordCancelTipsTitle" = "रद्द करने के लिए छोड़ें";
+"TUIKitInputRecordRejectedInCall" = "ऑडियो या वीडियो कॉल प्रगति पर है, कृपया बाद में पुनः प्रयास करें";
+"TUIKitInputRecordRejectedIsRecording" = "वर्तमान रिकॉर्डिंग समाप्त नहीं हुई";
+
+"StickyonTop" = "पिन";
+"CancelStickonTop" = "अनपिन";
+"ClearHistoryChatMessage" = "संदेश साफ़ करें";
+"MarkAsRead" = "पढ़ा हुआ चिह्नित करें";
+"MarkAsUnRead" = "अनपढ़ा चिह्नित करें";
+"MarkHide" = "छिपाएं";
+"MinimizeGroup" = "ग्रुप छोटा करें";
+"More" = "अधिक";
+"Info" = "जानकारी";
+
+"TUIKitConversationMarkHide" = "वार्तालाप छिपाएं";
+"TUIKitConversationMarkHideDescriptionOn" = "खोलने के बाद, यह वार्तालाप वार्तालाप सूची में दिखाई नहीं देगा, और चैट इतिहास अभी भी संरक्षित रहेगा";
+"TUIKitConversationMarkHideDescriptionOff" = "बंद करने के बाद, यह वार्तालाप वार्तालाप सूची में दिखाई देगा और चैट इतिहास अभी भी संरक्षित रहेगा।";
+
+"TUIKitConversationMarkFoldGroups" = "छोटे किए गए ग्रुप";
+"TUIKitConversationMarkFold" = "ग्रुप छोटा करें";
+
+"TUIKitRepliesDetailTitle" = "उत्तर विवरण";
+"TUIKitRepliesNum" = " उत्तर";
+"TUIKitReference" = "उद्धरण";
+"TUIKitNotSupportThisMessage" = "[यह संदेश प्रदर्शन वर्तमान में समर्थित नहीं है]";
+
+"TUIKitReferenceOriginMessageRevoke" = "उद्धृत सामग्री वापस ले ली गई";
+"TUIKitRepliesOriginMessageRevoke" = "उत्तर सामग्री वापस ले ली गई";
+
+"TUIKitAudioPlaybackStyleLoudspeaker" = "लाउडस्पीकर";
+"TUIKitAudioPlaybackStyleHandset" = "हैंडसेट";
+"TUIKitAudioPlaybackStyleChange2Loudspeaker" = "लाउडस्पीकर पर स्विच करें";
+"TUIKitAudioPlaybackStyleChange2Handset" = "हैंडसेट पर स्विच करें";
+
+"TUIKitGroupMessagePin" = "पिन";
+"TUIKitGroupMessageUnPin" = "अनपिन";
+"TUIKitGroupMessagePinOverLimit" = "पिन किए गए संदेश सीमा से अधिक";
+"TUIKitGroupMessagePinRepeatedly" = "संदेश पहले से ही पिन है।";
+"TUIKitGroupMessageUnPinRepeatedly" = "यह संदेश पहले से ही अनपिन है।";
+
+"TUIKitTranslate" = "अनुवाद";
+"TUIKitTranslateDefaultTips" = "IM द्वारा अनुवादित";
+"TUIKitTranslateFailed" = "अनुवाद करने में असमर्थ";
+"Hide" = "छिपाएं";
+"TranslateMessage" = "संदेश का भाषा में अनुवाद करें";
+"TranslateLanguageNotSupport" = "वर्तमान भाषाओं के बीच अनुवाद समर्थित नहीं है, कृपया किसी अन्य भाषा पर स्विच करें।";
+
+"TUIKitConvertToText" = "टेक्स्ट में\nबदलें";
+"TUIKitConvertToTextFailed" = "बदलने में असमर्थ";
+
+"TUIKitSignalingSwitchToAudio" = "वॉइस कॉल पर स्विच करें";
+"TUIKitSignalingUnsupportedCalling" = "अज्ञात आमंत्रण";
+"TUIKitSignalingComfirmSwitchToAudio" = "वीडियो से वॉइस में बदलने की पुष्टि";
+
+"TUIKitErrorEnableUserStatusOnConsole" = "उपयोगकर्ता स्थिति समर्थित नहीं। कृपया पहले कंसोल में क्षमता सक्षम करें।";
+
+"TUIKitChooseAvatar" = "अवतार चुनें";
+"TUIKitChooseCover" = "कवर चुनें";
+"TUIKitChooseBackground" = "वॉलपेपर चुनें";
+"TUIKitDefaultBackground" = "डिफ़ॉल्ट पृष्ठभूमि";
+"TUIKitIdentity" = "ID";
+
+"TUIKitChooseBackgroundSuccess" = "सेटअप सफल!";
+"TUIKitChooseBackgroundFailed" = "सेटअप विफल!";
+
+"TUIKitContactNoNewApplicationRequest" = "दोस्त अनुरोध खाली है";
+"TUIKitContactNoGroupChats" = "ग्रुप चैट खाली है";
+"TUIKitContactNoBlockList" = "ब्लॉक सूची खाली है";
+"TUIKitSearchNoResultLists" = "कोई वार्तालाप, संपर्क, या संदेश नहीं मिला";
+
+"TUIKitTyping" = "टाइपिंग";
+
+"TUIKitMessageTipsEditGroupAddOptFormat" = "%@ ने ग्रुप जोड़ विकल्प \"%@\" में बदल दिया,";
+"TUIKitMessageTipsEditGroupInviteOptFormat" = "%@ ने ग्रुप आमंत्रण विकल्प \"%@\" में बदल दिया,";
+
+"TUIKitCreatGroupNamed" = "ग्रुप उपनाम";
+"TUIKitCreatGroupID" = "ग्रुप ID (वैकल्पिक)";
+"TUIKitCreatGroupNamed_Placeholder" = "ग्रुप उपनाम दर्ज करें";
+"TUIKitCreatGroupID_Placeholder" = "ग्रुप ID दर्ज करें";
+"TUIKitCreatGroupAvatar" = "ग्रुप अवतार";
+"TUIKitCreatGroupType" = "ग्रुप प्रकार";
+"TUIKitCreatGroupType_Work" = "दोस्त कार्य ग्रुप (Work)";
+"TUIKitCreatGroupType_Public" = "अजनबी सामाजिक ग्रुप (Public)";
+"TUIKitCreatGroupType_Meeting" = "अस्थायी मीटिंग ग्रुप (Meeting)";
+"TUIKitCreatGroupType_Community" = "कम्युनिटी (Community)";
+"TUIKitCreatGroupType_Work_Desc" = "दोस्त कार्य ग्रुप (Work): सामान्य WeChat ग्रुप के समान, बनाने के बाद, केवल ग्रुप में पहले से मौजूद दोस्तों को ग्रुप में आमंत्रित किया जा सकता है, और आमंत्रित व्यक्ति या ग्रुप मालिक की अनुमोदन आवश्यक नहीं है।";
+"TUIKitCreatGroupType_Public_Desc" = "अजनबी सामाजिक ग्रुप (Public): QQ ग्रुप के समान, ग्रुप मालिक बनाने के बाद ग्रुप व्यवस्थापक नामित कर सकता है। उपयोगकर्ता द्वारा ग्रुप ID खोजने और ग्रुप आवेदन शुरू करने के बाद, ग्रुप में शामिल होने से पहले ग्रुप मालिक या व्यवस्थापक को अनुमोदन करना होगा।";
+"TUIKitCreatGroupType_Meeting_Desc" = "अस्थायी मीटिंग ग्रुप (Meeting): बनाने के बाद, आप स्वतंत्र रूप से प्रवेश और छोड़ सकते हैं, और ग्रुप में शामिल होने से पहले के संदेशों को देखने का समर्थन करते हैं; यह ऑडियो और वीडियो कॉन्फ्रेंस परिदृश्यों, ऑनलाइन शिक्षा परिदृश्यों, और अन्य परिदृश्यों के लिए उपयुक्त है जो वास्तविक समय ऑडियो और वीडियो उत्पादों के साथ संयुक्त हैं।";
+"TUIKitCreatGroupType_Community_Desc" = "कम्युनिटी (Community): बनाने के बाद, आप स्वतंत्र रूप से प्रवेश और छोड़ सकते हैं, 100,000 लोगों तक का समर्थन करते हैं, ऐतिहासिक संदेश भंडारण का समर्थन करते हैं, और उपयोगकर्ताओं द्वारा ग्रुप ID खोजने और ग्रुप आवेदन शुरू करने के बाद, वे व्यवस्थापक अनुमोदन के बिना ग्रुप में शामिल हो सकते हैं।";
+"TUIKitCreatGroupType_See_Doc" = "विवरण के लिए उत्पाद दस्तावेज़ देखें";
+"TUIKitCreatGroupType_Desc_Highlight" = "उत्पाद दस्तावेज़";
+"TUIKitCreatGroupType_See_Doc_Simple" = "उत्पाद दस्तावेज़ देखें";
+"TUIKitSearchItemCancel" = "रद्द करें";
+
+//----mini---
+"Pin" = "पिन";
+"UnPin" = "अनपिन";
+"TUIKitSelected" = "चयनित";
+"TUIKitThreadQuote" = "थ्रेड उद्धरण";
+"MessageInfo" = "संदेश जानकारी";
+"C2CReadBy" = "पढ़ा हुआ";
+"C2CDeliveredTo" = "डिलीवर किया गया";
+"GroupReadBy" = "द्वारा पढ़ा गया";
+"GroupDeliveredTo" = "डिलीवर किया गया";
+"TUIKitMessage" = "संदेश";
+"TUIKitAudio" = "ऑडियो";
+"TUIKitVideo" = "वीडियो";
+"TUIKitAddMembers" = "+ सदस्य जोड़ें";
+"TUIKitMembersRoleMember" = "सदस्य";
+"TUIKitMembersRoleAdmin" = "व्यवस्थापक";
+"TUIKitMembersRoleSuper" = "सुपर";
+"TUIKitCreateCancel" = "रद्द करें";
+"TUIKitCreateNext" = "अगला";
+"TUIKitCreateFinish" = "पूर्ण";
+"TUIKitCreateMemebers" = "भागीदार";
+"TUIKitDateToday" = "आज";
+//----mini---
+
+"TUIPollCreateNew" = "पोल बनाएं";
+"TUIPollCreateSucceed" = "बनाना सफल";
+"TUIPollCreateFail" = "बनाना विफल";
+"TUIPollEnterTitle" = "एक पोल प्रश्न दर्ज करें";
+"TUIPollEnterOption" = "एक विकल्प दर्ज करें";
+"TUIPollAddOption" = "विकल्प जोड़ें";
+"TUIPollEnableMultiSelect" = "एकाधिक विकल्प चुनने की अनुमति दें";
+"TUIPollSingleSelect" = "एकल";
+"TUIPollMultiSelect" = "एकाधिक";
+"TUIPollAnonymousVote" = "अनाम वोट";
+"TUIPollPublic" = "सार्वजनिक";
+"TUIPollNonPublic" = "गैर-सार्वजनिक";
+"TUIPollNonAnonymous" = "गैर-अनाम";
+"TUIPollAnonymous" = "अनाम";
+"TUIPollEnableNotification" = "नई सबमिट के लिए सूचना की अनुमति दें";
+"TUIPolllPublish" = "प्रकाशित करें";
+"TUIPollOneCount" = "वोट";
+"TUIPollMoreCount" = "वोट";
+"TUIPollInvitedParticipants" = "आमंत्रित: %d";
+"TUIPollRespondedParticipants" = "प्रतिक्रिया दी: %d";
+"TUIPollResend" = "पुनः भेजें";
+"TUIPollResendFail" = "पोल पुनः भेजने में विफल, त्रुटि कोड: %d";
+"TUIPollEnd" = "पोल बंद करें";
+"TUIPollEndFail" = "पोल बंद करने में विफल, त्रुटि कोड: %d";
+"TUIPollVoteNow" = "अभी वोट करें";
+"TUIPollConfirmVote" = "पुष्टि करें";
+"TUIPollCancelVote" = "रद्द करें";
+"TUIPollPercent" = "वोट %d, प्रतिशत %.0f%%";
+"TUIPollEnded" = "पोल बंद है";
+"TUIPollVoteSucceed" = "वोट सफल";
+"TUIPollVoteFail" = "वोट विफल";
+"TUIPollPublicResult" = "सार्वजनिक परिणाम";
+"TUIPollViewAllOptions" = "सभी विकल्प देखें";
+"TUIPollDisplayString" = "[पोल]";
+"TUIPollTextFieldExceedLimit" = "अधिकतम 50 वर्ण";
+"TUIPollVoted" = "वोट किया गया";
+"TUIPoll" = "पोल";
+
+"TUIGroupNote" = "ग्रुप नोट";
+"TUIGroupNoteTitle" = "ग्रुप नोट";
+"TUIGroupNoteSettings" = "सेटिंग्स";
+"TUIGroupNoteDeadline" = "समय सीमा %@";
+"TUIGroupNoteTitleHint" = "ग्रुप नोट शीर्षक दर्ज करें";
+"TUIGroupNoteDescriptionHint" = "ग्रुप नोट विवरण दर्ज करें";
+"TUIGroupNoteFormatExample" = "उदा.";
+"TUIGroupNoteFormatHint" = "ग्रुप नोट फॉर्म भरें";
+"TUIGroupNoteFillIn" = "कृपया भरें";
+"TUIGroupNoteMultipleSettings" = "एकाधिक सबमिशन की अनुमति दें";
+"TUIGroupNoteDeadlineSettings" = "समय सीमा सेट करें";
+"TUIGroupNoteDeadlineNotSet" = "सेट नहीं";
+"TUIGroupNoteNotifySettings" = "सबमिशन परिणाम सूचना";
+"TUIGroupNoteSend" = "भेजें";
+"TUIGroupNoteNow" = "अभी ग्रुप नोट में शामिल हों";
+"TUIGroupNoteMessageTitle" = "ग्रुप नोट";
+"TUIGroupNoteMessageTitleInfo" = "%@ द्वारा शुरू किया गया, %d ने भाग लिया";
+"TUIGroupNoteTipsMessagePrefix" = "%@ ने ग्रुप नोट में भाग लिया";
+"TUIGroupNoteHasStopped" = "ग्रुप नोट रुक गया है";
+"TUIGroupNoteDeadlineMustBeLater" = "समय सीमा वर्तमान समय से बाद में होनी चाहिए";
+"TUIGroupNoteDisplayString" = "[ग्रुप नोट]";
+"TUIGroupNoteSendSucceed" = "भेजना सफल";
+"TUIGroupNoteSendFail" = "भेजना विफल";
+"TUIGroupNoteSubmitExceedLimit" = "ग्रुप नोट की संख्या ऊपरी सीमा से अधिक";
+"TUIGroupNoteTextFieldExceedLimit" = "अधिकतम 50 वर्ण";
+"TUIGroupNoteSubmitOnce" = "केवल एक सबमिशन की अनुमति है";
+"TUIGroupNoteSubmitNotAllowed" = "आपको सबमिट करने की अनुमति नहीं है";
+"TUIGroupNoteExceedDeadline" = "समय सीमा से अधिक, संग्रह बंद";
+"TUIGroupNoteNotChanged" = "ग्रुप नोट की सामग्री नहीं बदली गई";
+"TUIGroupNoteExpand" = "...विस्तार करें...";
+"TUIGroupNoteNotDatePickerConfirm" = "ठीक";
+"TUIGroupNoteNotDatePickerCancel" = "रद्द करें";
+"TUIGroupNoteNotDatePickerDone" = "पूर्ण";
+"TUIGroupNoteNotDatePickerYear" = " ";
+"TUIGroupNoteNotDatePickerMonth" = " ";
+"TUIGroupNoteNotDatePickerDay" = " ";
+"TUIGroupNoteNotDatePickerHour" = " ";
+"TUIGroupNoteNotDatePickerMinute" = " ";
+"TUIGroupNoteNotDatePickerSecond" = " ";
+"TUIGroupNoteNotDatePickerAM" = "AM";
+"TUIGroupNoteNotDatePickerPM" = "PM";
+"TUIGroupNoteNotDatePickerNow" = " अभी";
+"TUIGroupNoteNotDatePickerToday" = " आज";
+"TUIGroupNoteNotDatePickerMon" = " सोम";
+"TUIGroupNoteNotDatePickerTue" = " मंगल";
+"TUIGroupNoteNotDatePickerWed" = " बुध";
+"TUIGroupNoteNotDatePickerTHR" = " गुरु";
+"TUIGroupNoteNotDatePickerFRI" = " शुक्र";
+"TUIGroupNoteNotDatePickerSAT" = " शनि";
+"TUIGroupNoteNotDatePickerSUN" = " रवि";
+
+"TUICustomerServiceAccounts" = "ग्राहक सेवा सूची";
+"TUICustomerServiceBranchMessage" = "[शाखा संदेश]";
+"TUICustomerServiceCardMessage" = "[कार्ड संदेश]";
+"TUICustomerServiceCollectInfomation" = "[जानकारी एकत्र करें]";
+"TUICustomerServiceSatisfactionEvaluation" = "[संतुष्टि मूल्यांकन]";
+"TUICustomerServiceTimeout" = "[सत्र समय समाप्त]";
+"TUICustomerServiceEnd" = "[सत्र समाप्त]";
+"TUICustomerServiceFillProductInfo" = "कृपया उत्पाद जानकारी भरें";
+"TUICustomerServiceSubmitProductInfo" = "सबमिट करें";
+"TUICustomerServiceClose" = "बंद करें";
+"TUICustomerServiceName" = "नाम";
+"TUICustomerServiceFillProductName" = "कृपया उत्पाद नाम भरें";
+"TUICustomerServiceDesc" = "विवरण";
+"TUICustomerServiceFillProductDesc" = "कृपया उत्पाद विवरण भरें";
+"TUICustomerServicePic" = "चित्र";
+"TUICustomerServiceFillPicLink" = "कृपया चित्र लिंक भरें";
+"TUICustomerServiceJumpLink" = "कूदें";
+"TUICustomerServiceFillJumpLink" = "कृपया कार्ड जंप लिंक भरें";
+"TUICustomerServiceSubmitEvaluation" = "सबमिट करें";
+"TUICustomerService" = "ग्राहक सेवा प्लगइन";
+"TUICustomerServiceSendProduct" = "उत्पाद जानकारी भेजें";
+"TUICustomerServiceCommonPhrase" = "सामान्य वाक्यांश";
+"TUICustomerServiceCommonPhraseStock" = "क्या यह स्टॉक में है?";
+"TUICustomerServiceCommonPhraseCheaper" = "क्या यह सस्ता हो सकता है?";
+"TUICustomerServiceCommonPhraseGift" = "क्या कोई उपहार है?";
+"TUICustomerServiceCommonPhraseShipping" = "शिपिंग तिथि क्या है?";
+"TUICustomerServiceCommonPhraseDelivery" = "यह कौन सी एक्सप्रेस कंपनी है?";
+"TUICustomerServiceCommonPhraseArrive" = "यह कब आएगा?";
+
+"TUIChatBotAccounts" = "चैट बॉट";
+"TUIChatBotChangeQuestion" = "इसे बदलें";
+
+"TUICustomerTaskFieldRequired" = "आवश्यक फ़ील्ड";
+"TUICustomerTaskSelectionFieldRequired" = "एक विकल्प चुनें";
+"TUICustomerSubmit" = "सबमिट करें";
+"TUICustomerFillin" = "भरें";
+"TUICustomerFillinNow" = "अभी भरें";
+"TUICustomerNotEditable" = "संपादन योग्य नहीं";
+"TUICustomerView" = "देखें";
+"TUICustomerHumanService" = "मानव सेवा";
+"TUICustomerEndService" = "बातचीत समाप्त करें";
+"TUICustomerServiceRating" = "सेवा मूल्यांकन";
+"TUICustomerHeader" = "हाय, मैं %@ हूं";
+"TUIAILabel" = "AI-जनित सामग्री";
+
+"TUIConversationGroupAll" = "सभी";
+"TUIConversationGroupUnread" = "अनपढ़ा";
+"TUIConversationGroupAtMe" = "@ मैं";
+"TUIConversationGroupGroup" = "ग्रुप";
+"TUIConversationGroupC2C" = "C2C";
+"TUIConversationGroupInputGroupName" = "कृपया एक ग्रुप नाम इनपुट करें";
+"TUIConversationGroupCreateGroup" = "नया वार्तालाप ग्रुप बनाएं";
+"TUIConversationGroupNewGroup" = "नया ग्रुप बनाएं";
+"TUIConversationGroupAddGroup" = "ग्रुप में जोड़ें";
+"TUIConversationGroupMoveGroup" = "ग्रुप ले जाएं";
+"TUIConversationGroupRemoveGroup" = "ग्रुप हटाएं";
+"TUIConversationGroupShowGroup" = "वार्तालाप ग्रुप दिखाएं";
+"TUIConversationGroupHideGroup" = "वार्तालाप ग्रुप छिपाएं";
+"TUIConversationGroupEditGroup" = "ग्रुप सेटिंग्स";
+"TUIConversationGroupEdit" = "संपादित करें";
+"TUIConversationGroupSave" = "सेव करें";
+"TUIConversationGroupSaveSucc" = "ग्रुप सेव सफल";
+"TUIConversationGroupCreate" = "बनाएं";
+"TUIConversationGroupNameIsNull" = "ग्रुप नाम खाली नहीं हो सकता!";
+"TUIConversationGroupNameIsInvalid" = "ग्रुप नाम पूर्वनिर्धारित डिफ़ॉल्ट ग्रुप नाम नहीं हो सकता";
+"TUIConversationGroupConversationIsNull" = "वार्तालाप नाम खाली नहीं हो सकता!";
+"TUIConversationGroupCreateSucc" = "ग्रुप सफलतापूर्वक बनाया गया";
+"TUIConversationGroupModifySucc" = "ग्रुप सफलतापूर्वक संशोधित";
+"TUIConversationGroupName" = "ग्रुप नाम";
+"TUIConversationGroupIncludeConversation" = "वार्तालाप शामिल";
+"TUIConversationGroupAddConversation" = "वार्तालाप जोड़ें";
+"TUIConversationGroup" = "वार्तालाप ग्रुप";
+"TUIConversationGroupManager" = "प्रबंधक";
+"TUIConversationGroupSelectGroup" = "वार्तालाप ग्रुप चुनें";
+"TUIConversationGroupUnlogined" = "लॉगिन नहीं, सेव विफल!";
+
+"TUIConversationMark" = "चिह्नित";
+"TUIConversationMarkCancel" = "अचिह्नित";
+
+"TUIConversationNone" = "अभी तक कोई %@ वार्तालाप नहीं";
+
+"TIMAppMainTitle" = "TencentCloud·IM";
+"TIMAppMainConnectingTitle" = "कनेक्ट हो रहा है...";
+"TIMAppMainDisconnectTitle" = "डिस्कनेक्ट";
+"TIMAppTabBarItemMessageText" = "संदेश";
+"TIMAppTabBarItemContactText" = "संपर्क";
+"TIMAppTabBarItemMeText" = "सेटिंग्स";
+"TIMAppTabBarItemMessageText_mini" = "चैट";
+"TIMAppTabBarItemContactText_mini" = "संपर्क";
+"TIMAppTabBarItemSettingText_mini" = "सेटिंग्स";
+"TIMAppTabBarItemCallsRecordText_mini" = "कॉल";
+"TIMAppChat" = "चैट";
+"TIMAppChatDisconnectTitle" = "डिस्कनेक्ट";
+"TIMAppChatSecurityWarning" = "रिमिटेंस, पुरस्कार जीतने, और अन्य जानकारी पर आसानी से विश्वास न करें। अज्ञात फोन कॉल से निपटने में सावधानी बरतें ताकि धोखा न खाएं। कृपया किसी भी संदिग्ध स्थिति की समय पर रिपोर्ट करें।";
+"TIMTencentRTCAppChatSecurityWarning" = "[सुरक्षा अनुस्मारक] कृपया पुलिस, ऋण संस्थानों, ग्राहक सेवा की नकल करने वाली सभी प्रकार की धोखाधड़ी के प्रति सतर्क रहें, और व्यक्तिगत गोपनीयता को लीक होने से बचें।";
+"TIMAppChatSecurityWarningReport" = "रिपोर्ट";
+"TIMAppChatSecurityWarningGot" = "समझ गया";
+"TIMAppTencentCloudIM" = "TencentCloudIM";
+"TIMAppWelcomeToChat" = "चैट डेमो में आपका स्वागत है!";
+"TIMAppWelcomeToChatDetails" = "चैट डेमो में आपका स्वागत है! आप टेक्स्ट/इमोजी/रिच मीडिया संदेश भेजने, संदेश पढ़ने की स्थिति और दोस्त संबंध जांचने जैसी विभिन्न सुविधाओं का प्रयास कर सकते हैं। आप एक-पर-एक चैट या ग्रुप चैट भी शुरू कर सकते हैं और तीन नो-रिप्लाइंग बॉट दोस्तों के साथ ग्रुप प्रबंधित कर सकते हैं।";
+"TIMAppSelectStyle" = "शैली चुनें";
+"TIMAppChatStyles" = "चैट शैलियाँ";
+"TIMAppChangeTheme" = "थीम बदलें";
+"TIMAppChatThemes" = "चैट थीम";
+"TIMAppEnterChat" = "चैट में प्रवेश करें";
+"TIMAppRunDemo" = "कुछ लाइन कोड परिवर्तनों के साथ 1 मिनट में डेमो चलाएं";
+"TIMAppCustomers" = "प्रति माह 10,000+ ग्राहक";
+"TIMAppMessagingSuccess" = "99.99% से अधिक मैसेजिंग सफलता दर और सेवा विश्वसनीयता";
+"TIMAppActiveUsers" = "प्रति माह 1 बिलियन+ सक्रिय उपयोगकर्ता";
+"TIMAppOK" = "ठीक";
+"TIMApp1Billion+" = "1 बिलियन+";
+"TIMApp10000+" = "10,000+";
+"TIMApp1Minute" = "1 मिनट";
+"TIMAppMeAbout" = "TencentCloud चैट के बारे में";
+"TIMAppConfirmLogout" = "अभी छोड़ें?";
+"TIMAppConfirm" = "ठीक";
+"TIMAppCancel" = "रद्द करें";
+"TIMAppMarkAllMessageAsReadSucc" = "सभी को पढ़ा हुआ चिह्नित करने में सफल";
+"TIMAppMarkAllMessageAsReadErrFormat" = "त्रुटि, %d, %@";
+"TIMChangeLanguage" = "भाषा";
+
+"TUIKitTickledMe" = "मैं";
+"TUIKitTickledActionVaule" = " ने गुदगुदाया ";
+"TUIKitTickledMyself" = "खुद को";
+"TUIKitImageViewOrigin" = "मूल छवि";
+"TUIGroupCreateTipsMessage" = "ग्रुप बनाएं";
+"TUICommunityCreateTipsMessage" = "कम्युनिटी बनाएं";
+"TUICommunityCreateTipsMessageRuleError" = "\"कम्युनिटी\" के कस्टम ग्रुप ID को @TGS#_ से प्रीफिक्स होना चाहिए।";
+"TUIGroupCreateTips

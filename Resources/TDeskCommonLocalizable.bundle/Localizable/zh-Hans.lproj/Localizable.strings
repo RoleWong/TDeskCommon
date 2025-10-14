@@ -724,7 +724,10 @@
 "TUICustomerNotEditable" = "不可编辑";
 "TUICustomerView" = "查看内容";
 "TUICustomerHumanService" = "人工服务";
+"TUICustomerEndService" = "结束会话";
+"TUICustomerServiceRating" = "服务评价";
 "TUICustomerHeader" = "Hi, 我是%@";
+"TUIAILabel" = "该回复由AI生成，内容仅供参考";
 
 
 "TUIConversationGroupAll" = "全部";

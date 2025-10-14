@@ -725,7 +725,10 @@
 "TUICustomerNotEditable" = "Not editable";
 "TUICustomerView" = "View";
 "TUICustomerHumanService" = "Human Service";
+"TUICustomerEndService" = "End conversation";
+"TUICustomerServiceRating" = "Service evaluation";
 "TUICustomerHeader" = "Hi, I'm %@";
+"TUIAILabel" = "AI-Generated Content";
 
 
 
